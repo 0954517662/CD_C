@@ -357,13 +357,13 @@ def help():
     key = key.title()
     key2 = Setmain["namecreator"]
     key2 = key2.title()
-    helpMessage = "╭━━━━━━━━━━━━━━━━━━━" + "\n" + \
-                  "┃🔰┃🇮🇩🇮🇩🇮🇩🍁"+ key2 +" 🍁🇮🇩🇮🇩🇮🇩" + "\n" + \
+    helpMessage = "╭━━━━━━━━━━━" + "\n" + \
+                  "┃🔰┃😈"+ key2 +" 😈" + "\n" + \
                   "┃🔰┃" + "\n" + \
-                  "┃🔰┃━━🍁〔 Help Message 〕🍁━━" + "\n" + \
+                  "┃🔰┃━😈〔 Help Message 〕😈━" + "\n" + \
                   "┃🔰┃🔰 Gunakan「 " + key + " 」Di Depannya\n" + \
-                  "┃🔰┃━━━━━━━━━━━━━━━━━━━" + "\n" + \
-                  "┃🔰┃🍁〔 Menu 〕🍁━━━━━━━━" + "\n" + \
+                  "┃🔰┃━━━━━━━━━" + "\n" + \
+                  "┃🔰┃👿〔 Menu 〕👿━" + "\n" + \
                   "┃🔰┃ " + key + "Help\n" + \
                   "┃🔰┃ " + key + "Help bot\n" + \
                   "┃🔰┃ " + key + "Translate\n" + \
@@ -374,7 +374,7 @@ def help():
                   "┃🔰┃ " + key + "Autotrans「ar-on/ar-off」\n" + \
                   "┃🔰┃ " + key + "Info meme\n" + \
                   "┃🔰┃ " + key + "Self「on/off」\n" + \
-                  "┃🔰┃ " + key + "Me\n" + \
+                  "┃🔰┃ " + key + "Me/คท\n" + \
                   "┃🔰┃ " + key + "Mycopy「@」\n" + \
                   "┃🔰┃ " + key + "Mybackup\n" + \
                   "┃🔰┃ " + key + "Stealname「@」\n" + \
@@ -386,20 +386,20 @@ def help():
                   "┃🔰┃ " + key + "Mid「@」\n" + \
                   "┃🔰┃ " + key + "Info 「@」\n" + \
                   "┃🔰┃ " + key + "Status\n" + \
-                  "┃🔰┃ " + key + "About\n" + \
+                  "┃🔰┃ " + key + "About/ข้อมูล\n" + \
                   "┃🔰┃ " + key + "Restart\n" + \
                   "┃🔰┃ " + key + "Runtime\n" + \
-                  "┃🔰┃ " + key + "Creator\n" + \
+                  "┃🔰┃ " + key + "Creator/ผส\n" + \
                   "┃🔰┃ " + key + "Respon\n" + \
                   "┃🔰┃ " + key + "Speed/Sp\n" + \
-                  "┃🔰┃ " + key + "Sprespon\n" + \
-                  "┃🔰┃ " + key + "Tagall\n" + \
+                  "┃🔰┃ " + key + "แตก/Max\n" + \
+                  "┃🔰┃ " + key + "แทค\n" + \
                   "┃🔰┃ " + key + "Byeme\n" + \
                   "┃🔰┃ " + key + "Ginfo\n" + \
                   "┃🔰┃ " + key + "Open\n" + \
                   "┃🔰┃ " + key + "Close\n" + \
                   "┃🔰┃ " + key + "Url grup\n" + \
-                  "┃🔰┃ " + key + "Reject\n" + \
+                  "┃🔰┃ " + key + "ลบรัน\n" + \
                   "┃🔰┃ " + key + "Gruplist\n" + \
                   "┃🔰┃ " + key + "Infogrup「angka」\n" + \
                   "┃🔰┃ " + key + "Infomem「angka」\n" + \
@@ -473,10 +473,10 @@ def help():
                   "┃🔵┃ " + key + "Refresh\n" + \
                   "┃🔵┃ " + key + "Listadmin\n" + \
                   "┃🔵┃" + "\n" + \
-                  "┃🔵┃🔵 Ketik「 Refresh 」Jika Sudah\n┃🔵┃Menggunakan Command Diatas...\n" + \
-                  "┃🔵┃━━━━━━━━━━━━━━━━━━━" + "\n" + \
+                  "┃🔵┃😈 Ketik「 Refresh 」Jika Sudah\n┃😈┃Menggunakan Command Diatas...\n" + \
+                  "┃🔵┃━━━━━━━━━━━" + "\n" + \
                   "┃🔵┃" + "\n" + \
-                  "╰━━━〔 BIG BOS: ©"+ key2 + "™  〕"
+                  "╰━〔BOS: "+ key2 + " 〕"
     return helpMessage
 
 
@@ -486,40 +486,40 @@ def helarot():
     key = key.title()
     key2 = Setmain["namecreator"]
     key2 = key2.title()
-    helpMessage1 = "╭━━━━━━━━━━━━━━━━━━━" + "\n" + \
-                  "┃🇮🇩🇮🇩🇮🇩🍁"+ key2 +" 🍁🇮🇩🇮🇩🇮🇩" + "\n" + \
+    helpMessage1 = "╭━━━━━━━━━━━" + "\n" + \
+                  "┃🛡┃👿"+ key2 +" 👿" + "\n" + \
                   "┃" + "\n" + \
-                  "┃━━🍁〔 Help Bot 〕🍁━━" + "\n" + \
-                  "┃🇮🇩 Gunakan「 " + key + " 」Di Depannya\n" + \
-                  "┃━━━━━━━━━━━━━━━━━━━" + "\n" + \
-                  "┃🍁〔 Menu 〕🍁━━━━━━━━" + "\n" + \
-                  "┃🇮🇩┃ " + key + "Cek sider\n" + \
-                  "┃🇮🇩┃ " + key + "Cek spam\n" + \
-                  "┃🇮🇩┃ " + key + "Cek pesan\n" + \
-                  "┃🇮🇩┃ " + key + "Cek respon\n" + \
-                  "┃🇮🇩┃ " + key + "Cek welcome\n" + \
-                  "┃🇮🇩┃ " + key + "Cek leave\n" + \
-                  "┃🇮🇩┃ " + key + "Set sider:「Text」\n" + \
-                  "┃🇮🇩┃ " + key + "Set spam:「Text」\n" + \
-                  "┃🇮🇩┃ " + key + "Set pesan:「Text」\n" + \
-                  "┃🇮🇩┃ " + key + "Set respon:「Text」\n" + \
-                  "┃🇮🇩┃ " + key + "Set welcome:「Text」\n" + \
-                  "┃🇮🇩┃ " + key + "Set leave:「Text」\n" + \
-                  "┃🇮🇩┃ " + key + "Myname:「Nama」\n" + \
-                  "┃🇮🇩┃ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
-                  "┃🇮🇩┃ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
+                  "┃🛡┃━👿〔 Help Bot 〕👿━" + "\n" + \
+                  "┃🛡┃ Gunakan「 " + key + " 」Di Depannya\n" + \
+                  "┃🛡┃━━━━━━━━━" + "\n" + \
+                  "┃🛡┃👿〔 Menu 〕👿━" + "\n" + \
+                  "┃🎭┃ " + key + "Cek sider\n" + \
+                  "┃🎭┃ " + key + "Cek spam\n" + \
+                  "┃🎭┃ " + key + "Cek pesan\n" + \
+                  "┃🎭┃ " + key + "Cek respon\n" + \
+                  "┃🎭┃ " + key + "Cek welcome\n" + \
+                  "┃🎭┃ " + key + "Cek leave\n" + \
+                  "┃🎭┃ " + key + "Set sider:「Text」\n" + \
+                  "┃🎭┃ " + key + "Set spam:「Text」\n" + \
+                  "┃🎭┃ " + key + "Set pesan:「Text」\n" + \
+                  "┃🎭┃ " + key + "Set respon:「Text」\n" + \
+                  "┃🎭┃ " + key + "Set welcome:「Text」\n" + \
+                  "┃🎭┃ " + key + "Set leave:「Text」\n" + \
+                  "┃🎭┃ " + key + "Myname:「Nama」\n" + \
+                  "┃🎭┃ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
+                  "┃🎭┃ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
+                  "┃🎭┃" + "\n" + \
+                  "┃🎭┃👿 Ketik「 Refresh 」Jika Sudah\n┃Menggunakan Command Diatas...\n" + \
+                  "┃━━━━━━━━━━━" + "\n" + \
                   "┃" + "\n" + \
-                  "┃🇮🇩 Ketik「 Refresh 」Jika Sudah\n┃Menggunakan Command Diatas...\n" + \
-                  "┃━━━━━━━━━━━━━━━━━━━" + "\n" + \
-                  "┃" + "\n" + \
-                  "╰━〔 BIG BOS: ©"+ key2 +"™  〕"
+                  "╰━〔BOS: "+ key2 +" 〕"
     return helpMessage1
 
 def infomeme():
     helpMessage2 = """
-╭━━━━━━━━━━━━━━━━━━━━━━━
-┃         🔰 Meme List 🔰
-┃━━━━━━━━━━━━━━━━━━━━━━━
+╭━━━━━━━━━━━
+┃  🔰 Meme List 🔰
+┃━━━━━━━━━━━
 ┃🔰┃ Buzz
 ┃🔰┃ Spongebob
 ┃🔰┃ Patrick
@@ -546,15 +546,15 @@ def infomeme():
 ┃🔰┃ sk
 ┃🔰┃ sparta
 ┃🔰┃ aag
-┃━━━━━━━━━━━━━━━━━━━━━━━
-┃    🎓 BY : ARIFISTIFIK 🎓
-┃ 💜 line.me/ti/p/~arif.mh 💜
-╰━━━━━━━━━━━━━━━━━━━━━━━
+┃━━━━━━━━━━━
+┃    🎓 BY : MAXSY 🎓
+┃ 💜 line.me/ti/p/~max_pv 💜
+╰━━━━━━━━━━━
 """
     return helpMessage2
 def listharga():
     helpMessage3 = """
-#Price List ARIFISTIFIK :
+#Price List MAXSY :
 
 🤖 Bot Python2 :
 🔰 Self Bot Only ⏩ 80K/Bulan
@@ -1195,7 +1195,7 @@ def bot(op):
                                 cl.sendMessage(msg.to, md+"-▬▬▬▬▬▬▬▬▬▬▬▬\n┃☬ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n┃☬ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n-▬▬▬▬▬▬▬▬▬▬▬▬")
                                 cl.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
  
-                        elif cmd == "creator" or text.lower() == 'creator':
+                        elif cmd == "ผส" or text.lower() == 'creator':
                             if msg._from in admin:
                                 cl.sendMessage(msg.to,"Creator Bot")
                                 ma = ""
@@ -1203,13 +1203,13 @@ def bot(op):
                                     ma = cl.getContact(i)
                                     cl.sendMessage(msg.to, None, contentMetadata={'mid': i}, contentType=13)
 
-                        elif cmd == "about" or cmd == "informasi":
+                        elif cmd == "about" or cmd == "ข้อมูล":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                sendMention(msg.to, sender, "「 Kırmızı Montlu 」\n")
                                cl.sendMessage(msg.to, None, contentMetadata={'mid': mid}, contentType=13)
 
-                        elif cmd == "me" or text.lower() == 'me':
+                        elif cmd == "me" or text.lower() == 'คท':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                msg.contentType = 13
@@ -1241,7 +1241,7 @@ def bot(op):
                                else:
                                    cl.sendImageWithURL(msg.to, 'http://dl.profile.line.naver.jp'+str(mi.picturePath))
 
-                        elif text.lower() == "remove chat":
+                        elif text.lower() == "ลบแชท":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                try:
@@ -1575,7 +1575,7 @@ def bot(op):
                                 else:
                                     sendMention(msg.to, "@! kebanyakan njer!!", [sender])
 
-                        elif cmd == "reject":
+                        elif cmd == "ลบรัน":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                               ginvited = cl.getGroupIdsInvited()
@@ -3508,7 +3508,7 @@ def bot(op):
                                     else:
                                          msgs = "Welcome Msg sudah tidak aktif"
                                     cl.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)
-                        elif ("Kick1 " in msg.text):
+                        elif ("แตก " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -3557,7 +3557,7 @@ def bot(op):
                                     p.close()
                                 except:
                                     p.close()
-                        elif text.lower() == 'nuke':
+                        elif text.lower() == 'max':
                             if msg.toType == 2:
                                 gs = cl.getGroup(msg.to)
                                 #gs = ar1.getGroup(msg.to)
