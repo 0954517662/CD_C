@@ -15,8 +15,8 @@ import youtube_dl
 cl = LineClient()
 #cl = LineClient(authToken='')
 cl.log("Auth Token : " + str(cl.authToken))
-channel = LineChannel(cl)
-cl.log("Channel Access Token : " + str(channel.channelAccessToken))
+#channel = LineChannel(cl)
+#cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
 poll = LinePoll(cl)
 call = cl
