@@ -1,3 +1,4 @@
+#【さัএπัஞ✵ບิथℓℓҨतΩ】
 # -*- coding: utf-8 -*-
 import LINEPY
 from LINEPY import *
@@ -391,14 +392,14 @@ def help():
                   "┃🔰┃ " + key + "Runtime\n" + \
                   "┃🔰┃ " + key + "Creator/ผส\n" + \
                   "┃🔰┃ " + key + "Respon\n" + \
-                  "┃🔰┃ " + key + "Speed/Sp\n" + \
+                  "┃🔰┃ " + key + "สปีท/Sp\n" + \
                   "┃🔰┃ " + key + "แตก/Max\n" + \
                   "┃🔰┃ " + key + "แทค\n" + \
                   "┃🔰┃ " + key + "Byeme\n" + \
                   "┃🔰┃ " + key + "Ginfo\n" + \
-                  "┃🔰┃ " + key + "Open\n" + \
-                  "┃🔰┃ " + key + "Close\n" + \
-                  "┃🔰┃ " + key + "Url grup\n" + \
+                  "┃🔰┃ " + key + "เปิดลิ้ง\n" + \
+                  "┃🔰┃ " + key + "ปิดลิ้ง\n" + \
+                  "┃🔰┃ " + key + "ลิ้งกลุ่ม\n" + \
                   "┃🔰┃ " + key + "ลบรัน\n" + \
                   "┃🔰┃ " + key + "Gruplist\n" + \
                   "┃🔰┃ " + key + "Infogrup「angka」\n" + \
@@ -407,8 +408,8 @@ def help():
                   "┃🔰┃ " + key + "Lurking「on/off」\n" + \
                   "┃🔰┃ " + key + "Lurkers\n" + \
                   "┃🔰┃ " + key + "Sider「on/off」\n" + \
-                  "┃🔰┃ " + key + "Updatefoto\n" + \
-                  "┃🔰┃ " + key + "Updategrup\n" + \
+                  "┃🔰┃ " + key + "Upfoto\n" + \
+                  "┃🔰┃ " + key + "Upgrup\n" + \
                   "┃🔰┃ " + key + "Broadcast:「Text」\n" + \
                   "┃🔰┃ " + key + "Setkey「New Key」\n" + \
                   "┃🔰┃ " + key + "Mykey\n" + \
@@ -554,7 +555,7 @@ def infomeme():
     return helpMessage2
 def listharga():
     helpMessage3 = """
-#Price List MAXSY :
+#Price List【さัএπัஞ✵ບิथℓℓҨतΩ】:
 
 🤖 Bot Python2 :
 🔰 Self Bot Only ⏩ 80K/Bulan
@@ -1522,7 +1523,7 @@ def bot(op):
                                    ma += "┃ " + str(a) + ". " +G.name+ "\n"
                                cl.sendMessage(msg.to,"╭━━[ GROUP LIST ]\n┃\n"+ma+"┃\n╰━━[ Total「"+str(len(gid))+"」Groups ]")
 
-                        elif cmd == "open":
+                        elif cmd == "เปิดลิ้ง":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 if msg.toType == 2:
@@ -1531,7 +1532,7 @@ def bot(op):
                                    cl.updateGroup(X)
                                    cl.sendMessage(msg.to, "Url Opened")
 
-                        elif cmd == "close":
+                        elif cmd == "ปิดลิ้ง":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 if msg.toType == 2:
@@ -1540,7 +1541,7 @@ def bot(op):
                                    cl.updateGroup(X)
                                    cl.sendMessage(msg.to, "Url Closed")
 
-                        elif cmd == "url grup":
+                        elif cmd == "ลิ้งกลุ่ม":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 if msg.toType == 2:
@@ -1587,14 +1588,14 @@ def bot(op):
                                   cl.sendMessage(to, "Tidak ada undangan yang tertunda")
 
 #===========BOT UPDATE============#
-                        elif cmd == "updategrup":
+                        elif cmd == "upgrup":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                               if msg.toType == 2:
                                 settings["groupPicture"] = True
                                 cl.sendMessage(msg.to,"Kirim fotonya.....")
 
-                        elif cmd == "updatefoto":
+                        elif cmd == "upfoto":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 Setmain["ARfoto"][mid] = True
@@ -1718,7 +1719,7 @@ def bot(op):
                                 get_contact_time = time.time() - get_contact_time_start
                                 cl.sendMessage(msg.to, " ☬ BOT Speed respon\n\n - Get Profile\n   %.10f\n - Get Contact\n   %.10f\n - Get Group\n   %.10f" % (get_profile_time/3,get_contact_time/3,get_group_time/3))
 
-                        elif cmd == "speed" or cmd == "sp":
+                        elif cmd == "สปีท" or cmd == "sp":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                start = time.time()
