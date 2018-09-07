@@ -565,7 +565,7 @@ def listharga():
 🔰 Self Bot + 10 Assist + 2 Ghost + 1 AntiJS ⏩ 450K/Bulan
 
 ✍️ Bisa Requests Mau Berapa Assist Buat Py3.
-Chat Ke : http://line.me/ti/p/~arif.mh
+Chat Ke : http://line.me/ti/p/~max_pv
 
 📃
 * Always on 24 Jam
@@ -724,7 +724,7 @@ def bot(op):
                     else:
                         cl.acceptGroupInvitation(op.param1)
                         ginfo = cl.getGroup(op.param1)
-                        cl.sendMessage(op.param1,"Merhaba " + str(ginfo.name))
+                        cl.sendMessage(op.param1,"สวัสดี 😊 " + str(ginfo.name))
 
         if op.type == 15:
             if op.param1 in welcome:
@@ -755,6 +755,8 @@ def bot(op):
                         pass
                     else:
                         cl.sendMessage(op.param1, wait["message"])
+                        cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
+                        cl.blockContact(op.param1)
 
         if op.type == 55:
             try:
@@ -949,6 +951,8 @@ def bot(op):
                    for mention in mentionees:
                         if mention ['M'] in Bots:
                            cl.sendMessage(msg.to, wait["Respontag"])
+                           contact = cl.getContact(op.param2).picturePath
+                           image = 'http://dl.profile.line.naver.jp'+contact
                            cl.sendMessage(msg.to, None, contentMetadata={"STKID":"7839705","STKPKGID":"1192862","STKVER":"1"}, contentType=7)
                            break
                if 'MENTION' in msg.contentMetadata.keys() != None:
