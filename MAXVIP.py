@@ -53,7 +53,7 @@ settings = {
     "group":{},
     "groupPicture":False,
     "changePicture":False,
-    "autoJoinTicket":False,
+    "autoJoinTicket":True,
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
         "Mozilla/5.0 (X11; U; Linux amd64; rv:5.0) Gecko/20100101 Firefox/5.0 (Debian)",
@@ -360,7 +360,7 @@ def help():
     helpMessage = "╭━━━━━━━━━━━" + "\n" + \
                   "┃🔰┃😈"+ key2 +" 😈" + "\n" + \
                   "┃🔰┃" + "\n" + \
-                  "┃🔰┃━😈〔 Help Message 〕😈━" + "\n" + \
+                  "┃🔰┃━😈〔 Help 〕😈━" + "\n" + \
                   "┃🔰┃🔰 Gunakan「 " + key + " 」Di Depannya\n" + \
                   "┃🔰┃━━━━━━━━━" + "\n" + \
                   "┃🔰┃👿〔 Menu 〕👿━" + "\n" + \
@@ -415,67 +415,67 @@ def help():
                   "┃🔰┃ " + key + "Resetkey\n" + \
                   "┃🔰┃" + "\n" + \
                   "┃🔰┃ Gunakan「 " + key + " 」Di Depannya\n" + \
-                  "┃🔰┃━━━━━━━━━━━━━━━━━━━" + "\n" + \
-                  "┃🍁┃〔 Hiburan 〕🍁━━━━━━━━" + "\n" + \
-                  "┃🍁┃ " + key + "Musik:「Judul Lagu」\n" + \
-                  "┃🍁┃ " + key + "Musik2:「Judul Lagu」\n" + \
-                  "┃🍁┃ " + key + "Playlist「Nama Penyanyi」\n" + \
-                  "┃🍁┃ " + key + "Ytmp3:「Judul Lagu」\n" + \
-                  "┃🍁┃ " + key + "Ytmp4:「Judul Video\n" + \
-                  "┃🍁┃ " + key + "Fs:「Nama」\n" + \
-                  "┃🍁┃ " + key + "cl-telp:「No HP」\n" + \
-                  "┃🍁┃ " + key + "cl-sms:「No HP」\n" + \
-                  "┃🍁┃ " + key + "Smsgratis:「Nohp:Pesannya」\n" + \
-                  "┃🍁┃ " + key + "Meme@Nama@Teks1@Teks2\n" + \
-                  "┃🍁┃ " + key + "Quotes\n" + \
-                  "┃🍁┃ " + key + "1cak\n" + \
-                  "┃🍁┃ " + key + "Profilesmule:「ID Smule」\n" + \
-                  "┃🍁┃ " + key + "Randomnumber:「Nmor-Nmor」\n" + \
-                  "┃🍁┃ " + key + "Acaratv:「Nama Channel」\n" + \
-                  "┃🍁┃ " + key + "Gimage:「Keyword」\n" + \
-                  "┃🍁┃ " + key + "Img food:「Nama Makanan」\n" + \
-                  "┃🍁┃ " + key + "Al-quran:「Surah」\n" + \
-                  "┃🍁┃ " + key + "Sholat:「Nama Kota」\n" + \
-                  "┃🍁┃ " + key + "Cuaca:「Nama Kota」\n" + \
-                  "┃🍁┃ " + key + "Lokasi:「Nama Kota」\n" + \
-                  "┃🍁┃ " + key + "Profileig:「Nama IG」\n" + \
-                  "┃🍁┃ " + key + "Cekig:「Nama IG」\n" + \
-                  "┃🍁┃ " + key + "Cekdate:「tgl-bln-thn」\n" + \
-                  "┃🍁┃ " + key + "Spamtag:「jumlahnya」\n" + \
-                  "┃🍁┃ " + key + "Spamtag「@」\n" + \
-                  "┃🍁┃ " + key + "Spamcall:「jumlahnya」\n" + \
-                  "┃🍁┃ " + key + "Spamcall\n" + \
-                  "┃🍁┃ " + key + "ID line:「Id Line nya」\n" + \
-                  "┃🍁┃" + "\n" + \
-                  "┃🍁┃🔰 Gunakan「 " + key + " 」Di Depannya\n" + \
-                  "┃🔵┃🍁〔 Settings 〕🍁━━━━━━━━━" + "\n" + \
-                  "┃🔵┃ " + key + "Unsend「on/off」\n" + \
-                  "┃🔵┃ " + key + "Jointicket「on/off」\n" + \
-                  "┃🔵┃ " + key + "Sticker「on/off」\n" + \
-                  "┃🔵┃ " + key + "Respon「on/off」\n" + \
-                  "┃🔵┃ " + key + "Respongift「on/off」\n" + \
-                  "┃🔵┃ " + key + "Contact「on/off」\n" + \
-                  "┃🔵┃ " + key + "Autojoin「on/off」\n" + \
-                  "┃🔵┃ " + key + "Autoadd「on/off」\n" + \
-                  "┃🔵┃ " + key + "Welcome「on/off」\n" + \
-                  "┃🔵┃ " + key + "Simi「on/off」\n" + \
-                  "┃🔵┃ " + key + "Autoleave「on/off」\n" + \
-                  "┃🔵┃" + "\n" + \
-                  "┃🔵┃🔰 Gunakan「 " + key + " 」Di Depannya\n" + \
-                  "┃🔵┃━━━━━━━━━━━━━━━━━━━" + "\n" + \
-                  "┃🔵┃🍁〔 Admin 〕🍁━━━━━━━━" + "\n" + \
-                  "┃🔵┃ " + key + "Changenamecreator:「Nama」\n" + \
-                  "┃🔵┃ " + key + "Resetnamecreator\n" + \
-                  "┃🔵┃ " + key + "Admin:on\n" + \
-                  "┃🔵┃ " + key + "Admin:repeat\n" + \
-                  "┃🔵┃ " + key + "Adminadd「@」\n" + \
-                  "┃🔵┃ " + key + "Admindell「@」\n" + \
-                  "┃🔵┃ " + key + "Refresh\n" + \
-                  "┃🔵┃ " + key + "Listadmin\n" + \
-                  "┃🔵┃" + "\n" + \
-                  "┃🔵┃😈 Ketik「 Refresh 」Jika Sudah\n┃😈┃Menggunakan Command Diatas...\n" + \
-                  "┃🔵┃━━━━━━━━━━━" + "\n" + \
-                  "┃🔵┃" + "\n" + \
+                  "┃🔰┃━━━━━━━━━" + "\n" + \
+                  "┃🔰┃😈〔 Hiburan 〕😈━" + "\n" + \
+                  "┃🔰┃ " + key + "Musik:「Judul Lagu」\n" + \
+                  "┃🔰┃ " + key + "Musik2:「Judul Lagu」\n" + \
+                  "┃🔰┃ " + key + "Playlist「Nama Penyanyi」\n" + \
+                  "┃🔰┃ " + key + "Ytmp3:「Judul Lagu」\n" + \
+                  "┃🔰┃ " + key + "Ytmp4:「Judul Video\n" + \
+                  "┃🔰┃ " + key + "Fs:「Nama」\n" + \
+                  "┃🔰┃ " + key + "cl-telp:「No HP」\n" + \
+                  "┃🔰┃ " + key + "cl-sms:「No HP」\n" + \
+                  "┃🔰┃ " + key + "Smsgratis:「Nohp:Pesannya」\n" + \
+                  "┃🔰┃ " + key + "Meme@Nama@Teks1@Teks2\n" + \
+                  "┃🔰┃ " + key + "Quotes\n" + \
+                  "┃🔰┃ " + key + "1cak\n" + \
+                  "┃🔰┃ " + key + "Profilesmule:「ID Smule」\n" + \
+                  "┃🔰┃ " + key + "Randomnumber:「Nmor-Nmor」\n" + \
+                  "┃🔰┃ " + key + "Acaratv:「Nama Channel」\n" + \
+                  "┃🔰┃ " + key + "Gimage:「Keyword」\n" + \
+                  "┃🔰┃ " + key + "Img food:「Nama Makanan」\n" + \
+                  "┃🔰┃ " + key + "Al-quran:「Surah」\n" + \
+                  "┃🔰┃ " + key + "Sholat:「Nama Kota」\n" + \
+                  "┃🔰┃ " + key + "Cuaca:「Nama Kota」\n" + \
+                  "┃🔰┃ " + key + "Lokasi:「Nama Kota」\n" + \
+                  "┃🔰┃ " + key + "Profileig:「Nama IG」\n" + \
+                  "┃🔰┃ " + key + "Cekig:「Nama IG」\n" + \
+                  "┃🔰┃ " + key + "Cekdate:「tgl-bln-thn」\n" + \
+                  "┃🔰┃ " + key + "Spamtag:「jumlahnya」\n" + \
+                  "┃🔰┃ " + key + "Spamtag「@」\n" + \
+                  "┃🔰┃ " + key + "Spamcall:「jumlahnya」\n" + \
+                  "┃🔰┃ " + key + "Spamcall\n" + \
+                  "┃🔰┃ " + key + "ID line:「Id Line nya」\n" + \
+                  "┃🔰┃" + "\n" + \
+                  "┃🔰┃😈 Gunakan「 " + key + " 」Di Depannya\n" + \
+                  "┃🔰┃😈〔 Settings 〕😈━" + "\n" + \
+                  "┃🔰┃ " + key + "Unsend「on/off」\n" + \
+                  "┃🔰┃ " + key + "Jointicket「on/off」\n" + \
+                  "┃🔰┃ " + key + "Sticker「on/off」\n" + \
+                  "┃🔰┃ " + key + "Respon「on/off」\n" + \
+                  "┃🔰┃ " + key + "Respongift「on/off」\n" + \
+                  "┃🔰┃ " + key + "Contact「on/off」\n" + \
+                  "┃🔰┃ " + key + "Autojoin「on/off」\n" + \
+                  "┃🔰┃ " + key + "Autoadd「on/off」\n" + \
+                  "┃🔰┃ " + key + "Welcome「on/off」\n" + \
+                  "┃🔰┃ " + key + "Simi「on/off」\n" + \
+                  "┃🔰┃ " + key + "Autoleave「on/off」\n" + \
+                  "┃🔰┃" + "\n" + \
+                  "┃🔰┃😈 Gunakan「 " + key + " 」Di Depannya\n" + \
+                  "┃🔰┃━━━━━━━━━" + "\n" + \
+                  "┃🔰┃😈〔 Admin 〕😈━" + "\n" + \
+                  "┃🔰┃ " + key + "Changenamecreator:「Nama」\n" + \
+                  "┃🔰┃ " + key + "Resetnamecreator\n" + \
+                  "┃🔰┃ " + key + "Admin:on\n" + \
+                  "┃🔰┃ " + key + "Admin:repeat\n" + \
+                  "┃🔰┃ " + key + "Adminadd「@」\n" + \
+                  "┃🔰┃ " + key + "Admindell「@」\n" + \
+                  "┃🔰┃ " + key + "Refresh\n" + \
+                  "┃🔰┃ " + key + "Listadmin\n" + \
+                  "┃🔰┃" + "\n" + \
+                  "┃🔰┃😈 Ketik「 Refresh 」Jika Sudah\n┃😈┃Menggunakan Command Diatas...\n" + \
+                  "┃🔰┃━━━━━━━━━" + "\n" + \
+                  "┃🔰┃" + "\n" + \
                   "╰━〔BOS: "+ key2 + " 〕"
     return helpMessage
 
