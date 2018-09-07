@@ -1096,7 +1096,8 @@ def bot(op):
                             if msg._from in admin:
                                helpMessage = help()
                                cl.sendMessage(msg.to, str(helpMessage))
-
+                               cl.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
+ 
                         if cmd == "self on":
                             if msg._from in admin:
                                 wait["selfbot"] = True
@@ -1112,7 +1113,8 @@ def bot(op):
                             if msg._from in admin:
                                helpMessage1 = helarot()
                                cl.sendMessage(msg.to, str(helpMessage1))
-
+                               cl.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
+ 
                         elif cmd == "info meme":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
@@ -1140,7 +1142,7 @@ def bot(op):
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "╭━━━━━━━━━━━━━━━━━━━━━━━\n┃          🔰 S T A T U S 🔰\n┃━━━━━━━━━━━━━━━━━━━━━━━\n"
+                                md = "-▬▬▬▬▬▬▬▬▬▬▬▬\n          🔰 S T A T U S 🔰\n-▬▬▬▬▬▬▬▬▬▬▬▬\n"
                                 if wait["unsend"] == True: md+="┃🔰┃ ✔️ Unsend「ON」\n"
                                 else: md+="┃🔰┃ ✖ Unsend「OFF」\n"
                                 if wait["sticker"] == True: md+="┃🔰┃ ✔️ Sticker「ON」\n"
@@ -1165,14 +1167,15 @@ def bot(op):
                                 else: md+="┃🔰┃ ✖ Welcome「OFF」\n"
                                 if wait["autoLeave"] == True: md+="┃🔰┃ ✔️ Autoleave「ON」\n"
                                 else: md+="┃🔰┃ ✖ Autoleave「OFF」\n"
-                                cl.sendMessage(msg.to, md+"┃━━━━━━━━━━━━━━━━━━━━━━━\n┃☬ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n┃☬ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n╰━━━━━━━━━━━━━━━━━━━━━━━")
-
+                                cl.sendMessage(msg.to, md+"-▬▬▬▬▬▬▬▬▬▬▬▬\n┃☬ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n┃☬ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n-▬▬▬▬▬▬▬▬▬▬▬▬")
+                                cl.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
+ 
                         elif cmd == "status translate":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "╭━━━━━━━━━━━━━━━━━━━━━━━\n┃ 🔰 STATUS TRANSLATE 🔰\n┃━━━━━━━━━━━━━━━━━━━━━━━\n"
+                                md = "-▬▬▬▬▬▬▬▬▬▬▬▬\n 🔰 STATUS TRANSLATE 🔰\n-▬▬▬▬▬▬▬▬▬▬▬▬\n"
                                 if msg.to in translatetr: md+="┃🔰┃ ✔️ Turkish「ON」\n"
                                 else: md+="┃🔰┃ ✖ Turkish 「OFF」\n"
                                 if msg.to in translateen: md+="┃🔰┃ ✔️ English「ON」\n"
@@ -1185,8 +1188,9 @@ def bot(op):
                                 else: md+="┃🔰┃ ✖ Taiwan「OFF」\n"
                                 if msg.to in translatear: md+="┃🔰┃ ✔️ Arab「ON」\n"
                                 else: md+="┃🔰┃ ✖ Arab「OFF」\n"
-                                cl.sendMessage(msg.to, md+"┃━━━━━━━━━━━━━━━━━━━━━━━\n┃☬ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n┃☬ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n╰━━━━━━━━━━━━━━━━━━━━━━━")
-
+                                cl.sendMessage(msg.to, md+"-▬▬▬▬▬▬▬▬▬▬▬▬\n┃☬ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n┃☬ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n-▬▬▬▬▬▬▬▬▬▬▬▬")
+                                cl.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
+ 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
                                 cl.sendMessage(msg.to,"Creator Bot")
@@ -1657,6 +1661,22 @@ def bot(op):
                                    for m in range (400, len(nama)-1):
                                        nm5 += [nama[m]]
                                    mentionMembers(msg.to, nm5)
+
+                        elif cmd == "แทค":
+                          if wait["selfbot"] == True:
+                            group = cl.getGroup(msg.to)
+                            nama = [contact.mid for contact in group.members]
+                            k = len(nama)//20
+                            for a in range(k+1):
+                                txt = u''
+                                s=0
+                                b=[]
+                                for i in group.members[a*20 : (a+1)*20]:
+                                    b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
+                                    s += 7
+                                    txt += u'@Alin \n'
+                                cl.sendMessage(to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
+                                cl.sendMessage(to, "Hello {} Mention".format(str(len(nama)))) 
 
                         elif cmd == "listadmin":
                           if wait["selfbot"] == True:
