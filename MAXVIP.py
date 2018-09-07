@@ -101,13 +101,13 @@ wait = {
     "welcomeOn":False,
     "sticker":False,
     "selfbot":True,
-    "unsend":False,
+    "unsend":True,
     "mention":"Hayoo ngintip -_-",
-    "Respontag":"╭❂➣━━━━━━━━➣\n┃❂ sᴇᴘʀɪ ʜᴀᴅɪʀ ʙᴏss \n╰❂➣━━━━━━━━➣",
+    "Respontag":"╭❂➣━━━━━━━━➣\n┃❂ อะไรคิดถึงกันหรอ\n╰❂➣━━━━━━━━➣",
     "welcome":"selamat datang",
     "leave":"NAH LOH BAPER KHAAAN KHAAAN 😂",
-    "comment":"Like like & like by DPK_BOT",
-    "message":"#salken ya by.sepri",
+    "comment":"Like like & like by【さัএπัஞ✵ບิथℓℓҨतΩ】",
+    "message":"【さัএπัஞ✵ບิथℓℓҨतΩ】 :\nList opsi\n🤖 Pasangan Hidup :\n🔰 Only Status ⏩ 180K/Bulan\n\n🤖 Systim Contract :\n🔰 Only Curhat ⏩ 100K/Bulan\n🔰 Zona Friend + TTM\n🔰 Zona Nyaman + Full Care + On 5day + 2 day free ⏩ 300K/Bulan\n\n✍️ Bisa Requests Mau Berapa Lama Durasi Buat Debay.\nChat Ke : http://line.me/ti/p/~max_pv\n\n📃\n* Always on 24 Jam\n* Keuntungan Banyak\n* Durasi min 0.25month\n* max no limit",
     }
 
 read = {
@@ -487,12 +487,12 @@ def helarot():
     key2 = Setmain["namecreator"]
     key2 = key2.title()
     helpMessage1 = "╭━━━━━━━━━━━" + "\n" + \
-                  "┃🛡┃👿"+ key2 +" 👿" + "\n" + \
+                  "┃🎭┃👿"+ key2 +" 👿" + "\n" + \
                   "┃" + "\n" + \
-                  "┃🛡┃━👿〔 Help Bot 〕👿━" + "\n" + \
-                  "┃🛡┃ Gunakan「 " + key + " 」Di Depannya\n" + \
-                  "┃🛡┃━━━━━━━━━" + "\n" + \
-                  "┃🛡┃👿〔 Menu 〕👿━" + "\n" + \
+                  "┃🎭┃━👿〔 Help Bot 〕👿━" + "\n" + \
+                  "┃🎭┃ Gunakan「 " + key + " 」Di Depannya\n" + \
+                  "┃🎭┃━━━━━━━━━" + "\n" + \
+                  "┃🎭┃👿〔 Menu 〕👿━" + "\n" + \
                   "┃🎭┃ " + key + "Cek sider\n" + \
                   "┃🎭┃ " + key + "Cek spam\n" + \
                   "┃🎭┃ " + key + "Cek pesan\n" + \
