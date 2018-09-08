@@ -207,9 +207,9 @@ def lineBot(op):
             if msg.contentType == 0:
                 if text is None:
                     pass
-                if text.lower() == "help":
+                if text.lower() == "/help":
                     text = helps()
-                    mids = ["udf060a89ebb2af83af77edddb767c329","ue36af223b6f57da66585e5313c653dd1"]
+                    mids = ["u4862fe4b182b2fd194a3108e2f3662e8","ue1d6a794435130d139f9c5dde19aa9e5"]
                     client.sendMentionRi(to, str(text), mids)
                     text = helps()
 
@@ -261,15 +261,15 @@ def lineBot(op):
                     pass
                 elif text.lower()== "autojoin on":
                   if wait['autoJoin'] == True:
-                        client.sendMessage(msg.to,"αυтσʝσιи ѕєт тσ σи")
+                        client.sendMessage(msg.to,"AUTOJOIN SET TO ON")
                       #else:
-                       #client.sendMessage(msg.to,"αυтσʝσιи αℓяєα∂у σи")
+                       #client.sendMessage(msg.to,"AUTOJOIN SET TO ON")
 
                 elif text.lower()== "autojoin off":
                   if wait['autoJoin'] == False:
-                        client.sendMessage(msg.to,"αυтσʝσιи ѕєт тσ σff")
+                        client.sendMessage(msg.to,"AUTOJOIN SET TO OFF")
                     #else:
-                       #client.sendMessage(msg.to,"αυтσʝσιи αℓяєα∂у σff")
+                       #client.sendMessage(msg.to,"AUTOJOIN SET TO OFF")
     except Exception as error:
         print(error)
 
