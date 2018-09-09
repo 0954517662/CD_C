@@ -3143,35 +3143,35 @@ def bot(op):
                                elapsed_time = time.time() - start
                                cl.sendMessage(msg.to, "{} sec".format(str(elapsed_time)))
 
-                        elif cmd == "spbot":
+                        elif cmd == "spb":
                             if msg._from in admin:
                                 start = time.time()
-                                sw.sendText("u923fca3dc907e047572ad25c24f1d29b", '.')
+                                sw.sendText("u4862fe4b182b2fd194a3108e2f3662e8", '.')
                                 elapsed_time = time.time() - start
                                 cl.sendText(msg.to, "%s" % (elapsed_time))
                                 
                                 start2 = time.time()
-                                sw.sendText("u923fca3dc907e047572ad25c24f1d29b", '.')
+                                sw.sendText("u4862fe4b182b2fd194a3108e2f3662e8", '.')
                                 elapsed_time = time.time() - start2
                                 ki.sendText(msg.to, "%s" % (elapsed_time))
                                 
                                 start3 = time.time()
-                                sw.sendText("u923fca3dc907e047572ad25c24f1d29b", '.')
+                                sw.sendText("u4862fe4b182b2fd194a3108e2f3662e8", '.')
                                 elapsed_time = time.time() - start3
                                 kk.sendText(msg.to, "%s" % (elapsed_time))
                                 
                                 start4 = time.time()
-                                sw.sendMessage("u923fca3dc907e047572ad25c24f1d29b", '.')
+                                sw.sendText("u4862fe4b182b2fd194a3108e2f3662e8", '.')
                                 elapsed_time = time.time() - start4
                                 kc.sendText(msg.to, "%s" % (elapsed_time))
                                 
                                 start5 = time.time()
-                                sw.sendText("u923fca3dc907e047572ad25c24f1d29b", '.')
+                                sw.sendText("u4862fe4b182b2fd194a3108e2f3662e8", '.')
                                 elapsed_time = time.time() - start5
                                 km.sendText(msg.to, "%s" % (elapsed_time)) 
                                 
                                 start6 = time.time()
-                                sw.sendText("u923fca3dc907e047572ad25c24f1d29b", '.')
+                                sw.sendText("u4862fe4b182b2fd194a3108e2f3662e8", '.')
                                 elapsed_time = time.time() - start6
                                 kb.sendText(msg.to, "%s" % (elapsed_time)) 
                                 
