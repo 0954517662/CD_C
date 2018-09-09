@@ -155,8 +155,8 @@ wait = {
     "welcomeOn":False,
     "stickerOn":False,
     "Addsticker":{
-            "name": "",
-            "status":False
+            "name": "【さัএπัஞ✵ບิथℓℓҨतΩ】",
+            "status":True
             },
     "stk":{},
     "selfbot":True,
@@ -520,13 +520,13 @@ def atend():
 def help():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage = "╠➣「 " + key + " ]TΣΔM SLΔCҜβΩT\n\n" + \
+    helpMessage = "╠➣「 " + key + " ]【さัএπัஞ✵ບิथℓℓҨतΩ】\n\n" + \
                   "╠➣" + key + "Me\n" + \
                   "╠➣" + key + "Mid「@」\n" + \
                   "╠➣" + key + "Steal「@」\n" + \
                   "╠➣" + key + "Cover「@」\n" + \
                   "╠➣" + key + "Kill「@」\n" + \
-                  "╠➣" + key + "Kick「@」\n" + \
+                  "╠➣" + key + "Go「@」\n" + \
                   "╠➣" + key + "Reject\n" + \
                   "╠➣" + key + "Setting\n" + \
                   "╠➣" + key + "About\n" + \
@@ -555,9 +555,9 @@ def help():
                   "╠➣" + key + "Lurking「on/off」\n" + \
                   "╠➣" + key + "Lurkers\n" + \
                   "╠➣" + key + "Sider「on/off」\n" + \
-                  "╠➣" + key + "Updatefoto\n" + \
-                  "╠➣" + key + "Updategrup\n" + \
-                  "╠➣" + key + "Updatebot\n" + \
+                  "╠➣" + key + "Upfoto\n" + \
+                  "╠➣" + key + "Upgrup\n" + \
+                  "╠➣" + key + "Upbot\n" + \
                   "╠➣" + key + "Broadcast:「Text」\n" + \
                   "╠➣" + key + "Setkey「New Key」\n" + \
                   "╠➣" + key + "Mykey\n" + \
@@ -661,16 +661,16 @@ def helpbot():
                   "╠➣" + key + "Set leave:「Text」\n" + \
                   "╠➣" + key + "Set welcome:「Text」\n" + \
                   "╠➣" + key + "Myname:「Nama」\n" + \
-                  "╠➣" + key + "Bot1name:「Nama」\n" + \
-                  "╠➣" + key + "Bot2name:「Nama」\n" + \
-                  "╠➣" + key + "Bot3name:「Nama」\n" + \
-                  "╠➣" + key + "Bot4name:「Nama」\n" + \
-                  "╠➣" + key + "Bot5name:「Nama」\n" + \
-                  "╠➣" + key + "Bot1up「Kirim fotonya」\n" + \
-                  "╠➣" + key + "Bot2up「Kirim fotonya」\n" + \
-                  "╠➣" + key + "Bot3up「Kirim fotonya」\n" + \
-                  "╠➣" + key + "Bot4up「Kirim fotonya」\n" + \
-                  "╠➣" + key + "Bot5up「Kirim fotonya」\n" + \
+                  "╠➣" + key + "1name:「Nama」\n" + \
+                  "╠➣" + key + "2name:「Nama」\n" + \
+                  "╠➣" + key + "3name:「Nama」\n" + \
+                  "╠➣" + key + "4name:「Nama」\n" + \
+                  "╠➣" + key + "5name:「Nama」\n" + \
+                  "╠➣" + key + "1up「Kirim fotonya」\n" + \
+                  "╠➣" + key + "2up「Kirim fotonya」\n" + \
+                  "╠➣" + key + "3up「Kirim fotonya」\n" + \
+                  "╠➣" + key + "4up「Kirim fotonya」\n" + \
+                  "╠➣" + key + "5up「Kirim fotonya」\n" + \
                   "╠➣" + key + "Gift:「Mid korban」「Jumlah」\n" + \
                   "╠➣" + key + "Spam:「Mid korban」「Jumlah」\n" + \
                   "\n「 Refresh 」done , for the command\n"
@@ -1866,7 +1866,7 @@ def bot(op):
                                 text = xpesan + zxc + ret_ + ""
                                 cl.sendMessage(to, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
 
-                        elif cmd == "set":
+                        elif cmd == "status":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
@@ -1927,7 +1927,7 @@ def bot(op):
                                 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
-                                cl.sendText(msg.to,"「Created by : TΣΔM SLΔCҜβΩT」") 
+                                cl.sendText(msg.to,"「Created by :【さัএπัஞ✵ບิथℓℓҨतΩ】」") 
                                 ma = ""
                                 for i in creator:
                                     ma = cl.getContact(i)
@@ -1954,7 +1954,7 @@ def bot(op):
                                 eltime = time.time() - mulai
                                 bot = runtime(eltime)
                                 start = time.time()
-                                sw.sendText("u7eadf0e2134b007f3aa538d79b5a012e", '.')
+                                sw.sendText("u4862fe4b182b2fd194a3108e2f3662e8", '.')
                                 elapsed_time = time.time() - start
                                 Galank = cl.getContact(mid)
                                 zx = ""
@@ -1980,7 +1980,7 @@ def bot(op):
                                 zxc += pesan2
                                 text = xpesan + zxc + ret_ + ""
                                 cl.sendMessage(to, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
-                                cl.sendContact(to, "u7eadf0e2134b007f3aa538d79b5a012e")
+                                cl.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
                             except Exception as e:
                                 cl.sendMessage(msg.to, str(e))
 
@@ -2765,20 +2765,20 @@ def bot(op):
                                    cl.sendMessage(msg.to, "Gruop "+str(x.name)+ "\nUrl grup : http://line.me/R/ti/g/"+gurl)
 
 #===========BOT UPDATE============#
-                        elif cmd == "updategrup":
+                        elif cmd == "upgrup":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                               if msg.toType == 2:
                                 settings["groupPicture"] = True
                                 cl.sendText(msg.to,"Kirim fotonya.....")
 
-                        elif cmd == "updatebot":
+                        elif cmd == "upbot":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 settings["changePicture"] = True
                                 cl.sendText(msg.to,"Kirim fotonya.....")
                                 
-                        elif cmd == "updatefoto":
+                        elif cmd == "upfoto":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 Setmain["RAfoto"][mid] = True
@@ -2790,32 +2790,32 @@ def bot(op):
                                 Setmain["RAvideo"][mid] = True
                                 cl.sendText(msg.to,"Kirim videonya.....")
                                 
-                        elif cmd == "bot1up":
+                        elif cmd == "1up":
                             if msg._from in admin:
                                 Setmain["RAfoto"][Amid] = True
                                 ki.sendText(msg.to,"Kirim fotonya.....")
                                 
-                        elif cmd == "bot2up":
+                        elif cmd == "2up":
                             if msg._from in admin:
                                 Setmain["RAfoto"][Bmid] = True
                                 kk.sendText(msg.to,"Kirim fotonya.....")
                                 
-                        elif cmd == "bot3up":
+                        elif cmd == "3up":
                             if msg._from in admin:
                                 Setmain["RAfoto"][Cmid] = True
                                 kc.sendText(msg.to,"Kirim fotonya.....")
                                 
-                        elif cmd == "bot4up":
+                        elif cmd == "4up":
                             if msg._from in admin:
                                 Setmain["RAfoto"][Dmid] = True
                                 km.sendText(msg.to,"Kirim fotonya.....")
 
-                        elif cmd == "bot5up":
+                        elif cmd == "5up":
                             if msg._from in admin:
                                 Setmain["RAfoto"][Emid] = True
                                 kb.sendText(msg.to,"Kirim fotonya.....")
 
-                        elif cmd == "bot6up":
+                        elif cmd == "6up":
                             if msg._from in admin:
                                 Setmain["RAfoto"][Zmid] = True
                                 sw.sendText(msg.to,"Kirim fotonya.....")
@@ -2830,7 +2830,7 @@ def bot(op):
                                 cl.updateProfile(profile)
                                 cl.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
-                        elif cmd.startswith("bot1name: "):
+                        elif cmd.startswith("1name: "):
                           if msg._from in admin:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -2840,7 +2840,7 @@ def bot(op):
                                 ki.updateProfile(profile)
                                 ki.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
-                        elif cmd.startswith("bot2name: "):
+                        elif cmd.startswith("2name: "):
                           if msg._from in admin:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -2850,7 +2850,7 @@ def bot(op):
                                 kk.updateProfile(profile)
                                 kk.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
-                        elif cmd.startswith("bot3name: "):
+                        elif cmd.startswith("3name: "):
                           if msg._from in admin:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -2860,7 +2860,7 @@ def bot(op):
                                 kc.updateProfile(profile)
                                 kc.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
-                        elif cmd.startswith("bot4name: "):
+                        elif cmd.startswith("4name: "):
                           if msg._from in admin:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -2870,7 +2870,7 @@ def bot(op):
                                 km.updateProfile(profile)
                                 km.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
-                        elif cmd.startswith("bot5name: "):
+                        elif cmd.startswith("5name: "):
                           if msg._from in admin:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -4421,7 +4421,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("Kick " in msg.text):
+                        elif ("Go " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
