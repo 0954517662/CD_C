@@ -1,58 +1,65 @@
-# -*- coding: utf-8 -*- 
-import linepy
-from linepy import *
+#【さัএπัஞ✵ບิथℓℓҨतΩ】
+# -*- coding: utf-8 -*-
+import LINEPY
+from LINEPY import *
 from akad.ttypes import *
 from multiprocessing import Pool, Process
-from googletrans import Translator
 from time import sleep
-import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, null, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, wikipedia
+import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, wikipedia
 from datetime import timedelta, date
 from datetime import datetime
 from bs4 import BeautifulSoup
+from googletrans import Translator
 import youtube_dl
-#import pyimgflip
 
-cl = LineClient(authToken='isi token mu')
+cl = LineClient()
+#cl = LineClient(authToken='isi token mu')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient(authToken='isi token mu')
+ki = LineClient()
+#ki = LineClient(authToken='isi token mu')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient(authToken='isi token mu')
+kk = LineClient()
+#kk = LineClient(authToken='isi token mu')
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient(authToken='isi token mu')
+kc = LineClient()
+#kc = LineClient(authToken='isi token mu')
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-km = LineClient(authToken='isi token mu')
+km = LineClient()
+#km = LineClient(authToken='isi token mu')
 km.log("Auth Token : " + str(km.authToken))
 channel4 = LineChannel(km)
 km.log("Channel Access Token : " + str(channel4.channelAccessToken))
 
-kb = LineClient(authToken='isi token mu')
+kb = LineClient()
+#kb = LineClient(authToken='isi token mu')
 kb.log("Auth Token : " + str(kb.authToken))
 channel5 = LineChannel(kb)
 kb.log("Channel Access Token : " + str(channel5.channelAccessToken))
 
-sw = LineClient(authToken='isi token mu')
+sw = LineClient()
+#sw = LineClient(authToken='isi token mu')
 sw.log("Auth Token : " + str(sw.authToken))
 channel6 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel6.channelAccessToken))
 
 poll = LinePoll(cl)
 call = LineCall(cl)
-creator = ["Isi mid creator"]
-owner = ["isi mid owner"]
-admin = ["isi mid admin"]
-staff = ["isi mid staff"]
+creator = ["ue1d6a794435130d139f9c5dde19aa9e5"]
+owner = ["ue1d6a794435130d139f9c5dde19aa9e5"]
+admin = ["ue1d6a794435130d139f9c5dde19aa9e5"]
+staff = ["ue1d6a794435130d139f9c5dde19aa9e5"]
 lineProfile = cl.getProfile()
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
