@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*- 
+#【さัএπัஞ✵ບิथℓℓҨतΩ】
+# -*- coding: utf-8 -*-
 import LINEPY
 from LINEPY import *
 from akad.ttypes import *
@@ -8,8 +9,9 @@ import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subpr
 from datetime import timedelta, date
 from datetime import datetime
 from bs4 import BeautifulSoup
+from googletrans import Translator
 import youtube_dl
-
+#BOT LINE BY:MAX
 cl = LineClient()
 #cl = LineClient(authToken='')
 cl.log("Auth Token : " + str(cl.authToken))
