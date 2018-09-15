@@ -15,31 +15,31 @@ import youtube_dl
 cl = LineClient()
 #cl = LineClient(authToken='')
 cl.log("Auth Token : " + str(cl.authToken))
-channel = LineChannel(cl)
-cl.log("Channel Access Token : " + str(channel.channelAccessToken))
+#channel = LineChannel(cl)
+#cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
 ki = LineClient(authToken='')
 ki.log("Auth Token : " + str(ki.authToken))
-channel1 = LineChannel(ki)
-ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
+#channel1 = LineChannel(ki)
+#ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
 kk = LineClient(authToken='')
 kk.log("Auth Token : " + str(kk.authToken))
-channel2 = LineChannel(kk)
-kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
+#channel2 = LineChannel(kk)
+#kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
 kc = LineClient(authToken='')
 kc.log("Auth Token : " + str(kc.authToken))
-channel3 = LineChannel(kc)
-kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
+#channel3 = LineChannel(kc)
+#kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
 sw = LineClient(authToken='')
 sw.log("Auth Token : " + str(sw.authToken))
-channel11 = LineChannel(sw)
-sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
+#channel11 = LineChannel(sw)
+#sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
 
 poll = LinePoll(cl)
-call = LineCall(cl)
+#call = LineCall(cl)
 creator = ["ue1d6a794435130d139f9c5dde19aa9e5","u4862fe4b182b2fd194a3108e2f3662e8"]
 owner = ["ue1d6a794435130d139f9c5dde19aa9e5","u4862fe4b182b2fd194a3108e2f3662e8"]
 admin = ["ue1d6a794435130d139f9c5dde19aa9e5","u4862fe4b182b2fd194a3108e2f3662e8"]
@@ -628,7 +628,15 @@ def bot(op):
                                     if op.param3 not in wait["blacklist"]:
                                         cl.kickoutFromGroup(op.param1,[op.param2])
                                 except:
-                                    pass
+                                    try:
+                                        if op.param3 not in wait["blacklist"]:
+                                            kk.kickoutFromGroup(op.param1,[op.param2])
+                                    except:
+                                        try:
+                                            if op.param3 not in wait["blacklist"]:
+                                                ki.kickoutFromGroup(op.param1,[op.param2])
+                                        except:
+                                            pass
                 return
 
         if op.type == 0:
@@ -640,8 +648,8 @@ def bot(op):
                         pass
                     else:
                         cl.sendText(op.param1, wait["message"])
-                        cl.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
-                        
+                        cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
+
         if op.type == 19:
             if op.param1 in protectkick:
                 if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
