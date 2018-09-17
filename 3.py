@@ -361,6 +361,7 @@ def help():
                   "🔰 " + key + "Protecturl「on/off」\n" + \
                   "🔰 " + key + "Protectjoin「on/off」\n" + \
                   "🔰 " + key + "Protectkick「on/off」\n" + \
+                  "🔰 " + key + "Protectinvite「on/off」\n" + \
                   "🔰 " + key + "Protectcancel「on/off」\n" + \
                   "\n🔰【さัএπัஞ✵ບิथℓℓҨतΩ】Setting\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
                   "🔰 " + key + "Sticker「on/off」\n" + \
@@ -630,7 +631,9 @@ def bot(op):
                     if (wait["message"] in [" "," ","\n",None]):
                         pass
                     else:
-                        cl.sendText(op.param1, wait["message"])
+                        cl.sendMessage(op.param1, wait["message"])
+                        cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
+                        cl.blockContact(op.param1)
 
         if op.type == 19:
             if op.param1 in protectkick:
@@ -1301,12 +1304,13 @@ def bot(op):
                             if msg._from in admin:
                                helpMessage = help()
                                cl.sendMessage(msg.to, str(helpMessage))
-                                                                                       
+                               cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
+                                     
                         if cmd == "self on":
                             if msg._from in admin:
                                 wait["selfbot"] = True
                                 cl.sendText(msg.to, "Selfbot diaktifkan")
-                                
+
                         elif cmd == "self off":
                             if msg._from in admin:
                                 wait["selfbot"] = False
@@ -1317,6 +1321,7 @@ def bot(op):
                             if msg._from in admin:
                                helpMessage1 = helpbot()
                                cl.sendMessage(msg.to, str(helpMessage1))
+                               cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
 
                         elif cmd == "status":
                           if wait["selfbot"] == True:
@@ -1353,6 +1358,7 @@ def bot(op):
                                 if msg.to in protectcancel: md+="🔰 Protectcancel「ᴏɴ」\n"
                                 else: md+="🔰 Protectcancel「ᴏꜰꜰ」\n"
                                 cl.sendMessage(msg.to, md+"\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
+                                cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
@@ -2608,6 +2614,26 @@ def bot(op):
                                          msgs = "Protect cancel dinonaktifkan\nDi Group : " +str(ginfo.name)
                                     else:
                                          msgs = "Protect cancel sudah tidak aktif"
+                                    cl.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)
+
+                        elif 'Protectinvite ' in msg.text:
+                           if msg._from in admin:
+                              spl = msg.text.replace('Protectinvite ','')
+                              if spl == 'on':
+                                  if msg.to in protectinvite:
+                                       msgs = "Protect invite sudah aktif"
+                                  else:
+                                       protectinvite.append(msg.to)
+                                       ginfo = cl.getGroup(msg.to)
+                                       msgs = "Protect invite diaktifkan\nDi Group : " +str(ginfo.name)
+                                  cl.sendMessage(msg.to, "「Diaktifkan」\n" + msgs)
+                              elif spl == 'off':
+                                    if msg.to in protectinvite:
+                                         protectinvite.remove(msg.to)
+                                         ginfo = cl.getGroup(msg.to)
+                                         msgs = "Protect invite dinonaktifkan\nDi Group : " +str(ginfo.name)
+                                    else:
+                                         msgs = "Protect invite sudah tidak aktif"
                                     cl.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)
 
                         elif 'Semuapro ' in msg.text:
