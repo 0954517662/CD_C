@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*- 
+#【さัএπัஞ✵ບิथℓℓҨतΩ】
+# -*- coding: utf-8 -*-
 import LINEPY
 from LINEPY import *
 from akad.ttypes import *
@@ -8,39 +9,45 @@ import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subpr
 from datetime import timedelta, date
 from datetime import datetime
 from bs4 import BeautifulSoup
+from googletrans import Translator
 import youtube_dl
 
-cl = LineClient(authToken='EwmI8UdzrS54O0qfo3ce.mDIRQD+WthuKlYOGL7ITRG.9/vatUMsaFypyEOLQ/3EKDAHYP6HLi6VVnccPQk6KcA=')   #PH-13
+cl = LineClient()
+#cl = LineClient(authToken='EwmI8UdzrS54O0qfo3ce.mDIRQD+WthuKlYOGL7ITRG.9/vatUMsaFypyEOLQ/3EKDAHYP6HLi6VVnccPQk6KcA=')   #PH-13
 cl.log("Auth Token : " + str(cl.authToken))
-channel = LineChannel(cl)
-cl.log("Channel Access Token : " + str(channel.channelAccessToken))
+#channel = LineChannel(cl)
+#cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient(authToken=)
+ki = LineClient()
+#ki = LineClient(authToken='')
 ki.log("Auth Token : " + str(ki.authToken))
-channel1 = LineChannel(ki)
-ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
+#channel1 = LineChannel(ki)
+#ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient(authToken='token')
+kk = LineClient()
+#kk = LineClient(authToken='token')
 kk.log("Auth Token : " + str(kk.authToken))
-channel2 = LineChannel(kk)
-kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
+#channel2 = LineChannel(kk)
+#kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient(authToken='')
+kc = LineClient()
+#kc = LineClient(authToken='')
 kc.log("Auth Token : " + str(kc.authToken))
-channel3 = LineChannel(kc)
-kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
+#channel3 = LineChannel(kc)
+#kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-sw = LineClient(authToken='')
+sw = LineClient()
+#sw = LineClient(authToken='')
 sw.log("Auth Token : " + str(sw.authToken))
-channel11 = LineChannel(sw)
-sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
+#channel11 = LineChannel(sw)
+#sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
 
 poll = LinePoll(cl)
-call = LineCall(cl)
-creator = ["ub0ff92e9820f6b82a2f0b81d6758c2fb","u31d8aba9dff04c75242f2a2097b8adae"]
-owner = ["ub0ff92e9820f6b82a2f0b81d6758c2fb","u31d8aba9dff04c75242f2a2097b8adae"]
-admin = ["ub0ff92e9820f6b82a2f0b81d6758c2fb","u31d8aba9dff04c75242f2a2097b8adae"]
-staff = ["ub0ff92e9820f6b82a2f0b81d6758c2fb","u31d8aba9dff04c75242f2a2097b8adae"]
+#call = LineCall(cl)
+creator = ["ue1d6a794435130d139f9c5dde19aa9e5"]
+owner = ["ue1d6a794435130d139f9c5dde19aa9e5"]
+admin = ["ue1d6a794435130d139f9c5dde19aa9e5"]
+staff = ["ue1d6a794435130d139f9c5dde19aa9e5"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -67,7 +74,7 @@ settings = {
     "group":{},
     "groupPicture":False,
     "changePicture":False,
-    "autoJoinTicket":False,
+    "autoJoinTicket":True,
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
         "Mozilla/5.0 (X11; U; Linux amd64; rv:5.0) Gecko/20100101 Firefox/5.0 (Debian)",
@@ -116,17 +123,17 @@ wait = {
     'autoAdd':True,
     'autoLeave':False,
     'autoLeave1':False,
-    "detectMention":False,
+    "detectMention":True,
     "Mentiongift": False,
     "Mentionkick":False,
     "welcomeOn":False,
     "sticker":False,
     "selfbot":True,
     "mention":"sesungguhnya mengintip adalah perbuatan yg tercela ,apalagi ngintip orang sedang mandi.",
-    "Respontag":"aih knpa kamu yg ngetag,aku maunya ditag dia ,kamu jangan tag aku lagi ya.",
+    "Respontag":"aih knpa kamu yg ngetag,aku maunya ditag dia.",
     "welcome":"Selamat datang & semoga betah di",
     "comment":"AutoLike & Comment by【さัএπัஞ✵ບิथℓℓҨतΩ】",
-    "message":"Yess aku diadd 😃\n☆ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™☆\n\nOpen Jasa:\n🔰 Bahagiain Pacar\n🔰 Jadi Pacar idaman\n\nMinat?\nLangsung Call aja...",
+    "message":"【さัএπัஞ✵ບิथℓℓҨतΩ】:\nList opsi\n🤖 Pasangan Hidup :\n🔰 Only Status ⏩ 180K/Bulan\n\n🤖 Systim Contract :\n🔰 Only Curhat ⏩ 100K/Bulan\n🔰 Zona Friend + TTM\n🔰 Zona Nyaman + Full Care + On 5day + 2 day free ⏩ 300K/Bulan\n\n✍️ Bisa Requests Mau Berapa Lama Durasi Buat Debay.\nChat Ke : http://line.me/ti/p/~max_pv\n\n📃\n* Always on 24 Jam\n* Keuntungan Banyak\n* Durasi min 0.25month\n* max no limit",
     }
 
 read = {
