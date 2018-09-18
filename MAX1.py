@@ -301,7 +301,7 @@ def command(text):
 def help():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage = "╔═════════════════\n╠❂【さัএπัஞ✵ບิथℓℓҨतΩ】\n╚═════════════════\n「 " + key + " 」\n╔═════════════════" + \
+    helpMessage = "╔═════════════════\n╠❂【さัএπัஞ✵ບิथℓℓҨतΩ】\n╚═════════════════\n「 " + key + " 」\n╔═════════════════\n" + \
                   "╠ ✯͜͡❂ " + key + "Me\n" + \
                   "╠ ✯͜͡❂ " + key + "Mid「@」\n" + \
                   "╠ ✯͜͡❂ " + key + "Info「@」\n" + \
@@ -339,7 +339,6 @@ def help():
                   "╠ ✯͜͡❂ " + key + "Setkey「New Key」\n" + \
                   "╠ ✯͜͡❂ " + key + "Mykey\n" + \
                   "╠ ✯͜͡❂ " + key + "Resetkey\n" + \
-                  "╠ ✯͜͡❂【さัএπัஞ✵ບิथℓℓҨतΩ】Media\n╠ ✯͜͡❂ Gunakan「 " + key + " 」di depannya\n" + \
                   "╠ ✯͜͡❂ " + key + "ID line:「Id Line nya」\n" + \
                   "╠ ✯͜͡❂ " + key + "Sholat:「Nama Kota」\n" + \
                   "╠ ✯͜͡❂ " + key + "Cuaca:「Nama Kota」\n" + \
@@ -355,7 +354,6 @@ def help():
                   "╠ ✯͜͡❂ " + key + "Spamtag「@」\n" + \
                   "╠ ✯͜͡❂ " + key + "Spamcall:「jumlahnya」\n" + \
                   "╠ ✯͜͡❂ " + key + "Spamcall\n" + \
-                  "╠ ✯͜͡❂【さัএπัஞ✵ບิथℓℓҨतΩ】Protection\n╠ ✯͜͡❂ Jangan gunakan「 " + key + " 」di depannya\n\n" + \
                   "╠ ✯͜͡❂ " + key + "Notag「on/off」\n" + \
                   "╠ ✯͜͡❂ " + key + "Semuapro「on/off」\n" + \
                   "╠ ✯͜͡❂ " + key + "Protecturl「on/off」\n" + \
@@ -363,7 +361,6 @@ def help():
                   "╠ ✯͜͡❂ " + key + "Protectkick「on/off」\n" + \
                   "╠ ✯͜͡❂ " + key + "Protectinvite「on/off」\n" + \
                   "╠ ✯͜͡❂ " + key + "Protectcancel「on/off」\n" + \
-                  "╠ ✯͜͡❂【さัএπัஞ✵ບิथℓℓҨतΩ】Setting\n╠ ✯͜͡❂ Jangan gunakan「 " + key + " 」di depannya\n\n" + \
                   "╠ ✯͜͡❂ " + key + "Sticker「on/off」\n" + \
                   "╠ ✯͜͡❂ " + key + "Respon「on/off」\n" + \
                   "╠ ✯͜͡❂ " + key + "Respongift「on/off」\n" + \
@@ -372,7 +369,6 @@ def help():
                   "╠ ✯͜͡❂ " + key + "Autoadd「on/off」\n" + \
                   "╠ ✯͜͡❂ " + key + "Welcome「on/off」\n" + \
                   "╠ ✯͜͡❂ " + key + "Autoleave「on/off」\n" + \
-                  "╠ ✯͜͡❂【さัএπัஞ✵ບิथℓℓҨतΩ】Admin\n╠ ✯͜͡❂ Jangan gunakan「 " + key + " 」di depannya\n" + \
                   "╠ ✯͜͡❂ " + key + "Admin:on\n" + \
                   "╠ ✯͜͡❂ " + key + "Admin:repeat\n" + \
                   "╠ ✯͜͡❂ " + key + "Staff:on\n" + \
@@ -395,7 +391,7 @@ def help():
 def helpbot():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage1 = "╔═════════════════\n╠❂【さัএπัஞ✵ບิथℓℓҨतΩ】\n╚═════════════════\n「 " + key + " 」\n╔═════════════════" + \
+    helpMessage1 = "╔═════════════════\n╠❂【さัএπัஞ✵ບิथℓℓҨतΩ】\n╚═════════════════\n「 " + key + " 」\n╔═════════════════\n" + \
                   "╠ ✯͜͡❂ " + key + "Blc\n" + \
                   "╠ ✯͜͡❂ " + key + "Ban:on\n" + \
                   "╠ ✯͜͡❂ " + key + "Unban:on\n" + \
@@ -409,7 +405,6 @@ def helpbot():
                   "╠ ✯͜͡❂ " + key + "Talkbanlist\n" + \
                   "╠ ✯͜͡❂ " + key + "Clearban\n" + \
                   "╠ ✯͜͡❂ " + key + "Refresh\n" + \
-                  "╠ ✯͜͡❂【さัএπัஞ✵ບิथℓℓҨतΩ】Menu\n╠ ✯͜͡❂ Gunakan「 " + key + " 」di depannya\n" + \
                   "╠ ✯͜͡❂ " + key + "Cek sider\n" + \
                   "╠ ✯͜͡❂ " + key + "Cek spam\n" + \
                   "╠ ✯͜͡❂ " + key + "Cek pesan \n" + \
