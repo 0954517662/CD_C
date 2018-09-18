@@ -626,7 +626,7 @@ def bot(op):
                     if (wait["message"] in [" "," ","\n",None]):
                         pass
                     else:
-                        cl.sendMessage(op.param1, wait["message"])
+                        cl.sendText(op.param1, wait["message"])
                         cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
                         cl.blockContact(op.param1)
 
