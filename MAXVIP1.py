@@ -3558,54 +3558,54 @@ def bot(op):
                                     p.close()
                                 except:
                                     p.close()
-                        elif text.lower() == 'max':
-                            if msg.toType == 2:
-                                gs = cl.getGroup(msg.to)
+#                        elif text.lower() == 'max':
+  #                          if msg.toType == 2:
+     #                           gs = cl.getGroup(msg.to)
                                 #gs = ar1.getGroup(msg.to)
-                                #gs = ar2.getGroup(msg.to)
-                                targets = []
-                                for g in gs.members:
-                                    targets.append(g.mid)
-                                targets.remove(mid)
-                                if targets == []:
-                                    cl.sendText(msg.to,"kayak nya limit")
-                                else:
-                                    for target in targets:
-                                      if target not in Bots:
-                                        try:
-                                            klist=[cl]
-                                            kicker=random.choice(klist)
-                                            kicker.kickoutFromGroup(msg.to,[target])
-                                            print (msg.to,[g.mid])
-                                        except:
-                                           pass
-                        elif text.lower() == 'broken':
-                            if msg._from in admin:
-                                if msg.toType == 2:
-                                    gs = cl.getGroup(msg.to)
-                                gs.preventedJoinByTicket = False
-                                cl.updateGroup(gs)
-                                invsend = 0
-                                Ticket = cl.reissueGroupTicket(msg.to)
-                                cl.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                cl.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                time.sleep(0.1)
-                                targets = []
-                                for g in gs.members:
-                                    targets.append(g.mid)
-                                targets.remove(mid)
-                                if targets == []:
-                                    cl.sendText(msg.to,"DRAG KICK OUT BYE")
-                                else:
-                                    for target in targets:
-                                      if target not in Bots:
-                                        try:
-                                            klist=[cl,cl,cl]
-                                            kicker=random.choice(klist)
-                                            kicker.kickoutFromGroup(msg.to,[target])
-                                            print (msg.to,[g.mid])
-                                        except:
-                                           pass
+         #                       #gs = ar2.getGroup(msg.to)
+           #                     targets = []
+              #                  for g in gs.members:
+                #                    targets.append(g.mid)
+                 #               targets.remove(mid)
+                 #               if targets == []:
+                 #                   cl.sendText(msg.to,"kayak nya limit")
+                   #             else:
+                     #               for target in targets:
+                      #                if target not in Bots:
+                         #               try:
+                          #                  klist=[cl]
+                           #                 kicker=random.choice(klist)
+                              #              kicker.kickoutFromGroup(msg.to,[target])
+                              #              print (msg.to,[g.mid])
+                          #              except:
+                          #                 pass
+     #                   elif text.lower() == 'broken':
+      #                      if msg._from in admin:
+       #                         if msg.toType == 2:
+        #                            gs = cl.getGroup(msg.to)
+          #                      gs.preventedJoinByTicket = False
+           #                     cl.updateGroup(gs)
+            #                    invsend = 0
+             #                   Ticket = cl.reissueGroupTicket(msg.to)
+               #                 cl.acceptGroupInvitationByTicket(msg.to,Ticket)
+                #                cl.acceptGroupInvitationByTicket(msg.to,Ticket)
+              #                  time.sleep(0.1)
+             #                   targets = []
+            #                    for g in gs.members:
+          #                          targets.append(g.mid)
+            #                    targets.remove(mid)
+              #                  if targets == []:
+               #                     cl.sendText(msg.to,"DRAG KICK OUT BYE")
+               #                 else:
+                #                    for target in targets:
+                 #                     if target not in Bots:
+                #                        try:
+               #                             klist=[cl,cl,cl]
+                #                            kicker=random.choice(klist)
+                 #                           kicker.kickoutFromGroup(msg.to,[target])
+                  #                          print (msg.to,[g.mid])
+                     #                   except:
+                      #                     pass
                         elif msg.text in ['cancel']:
                             if msg.toType == 2:
                                 #if msg._from in admin:
