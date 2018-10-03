@@ -354,202 +354,196 @@ def command(text):
     return cmd
 
 def help():
-    key = Setmain["keyCommand"]
-    key = key.title()
-    key2 = Setmain["namecreator"]
-    key2 = key2.title()
-    helpMessage = "╭━━━━━━━━━━━" + "\n" + \
-                  "┃🔰┃😈"+ key2 +" 😈" + "\n" + \
-                  "┃🔰┃" + "\n" + \
-                  "┃🔰┃━😈〔 Help 〕😈━" + "\n" + \
-                  "┃🔰┃🔰 Gunakan「 " + key + " 」Di Depannya\n" + \
-                  "┃🔰┃━━━━━━━━━" + "\n" + \
-                  "┃🔰┃👿〔 Menu 〕👿━" + "\n" + \
-                  "┃🔰┃ " + key + "Help\n" + \
-                  "┃🔰┃ " + key + "Help bot\n" + \
-                  "┃🔰┃ " + key + "Translate\n" + \
-                  "┃🔰┃ " + key + "Autotrans「en-on/en-off」\n" + \
-                  "┃🔰┃ " + key + "Autotrans「id-on/id-off」\n" + \
-                  "┃🔰┃ " + key + "Autotrans「th-on/th-off」\n" + \
-                  "┃🔰┃ " + key + "Autotrans「tw-on/tw-off」\n" + \
-                  "┃🔰┃ " + key + "Autotrans「ar-on/ar-off」\n" + \
-                  "┃🔰┃ " + key + "Info meme\n" + \
-                  "┃🔰┃ " + key + "Self「on/off」\n" + \
-                  "┃🔰┃ " + key + "Me/คท\n" + \
-                  "┃🔰┃ " + key + "Mycopy「@」\n" + \
-                  "┃🔰┃ " + key + "Mybackup\n" + \
-                  "┃🔰┃ " + key + "Stealname「@」\n" + \
-                  "┃🔰┃ " + key + "Stealbio「@」\n" + \
-                  "┃🔰┃ " + key + "Stealpicture「@」\n" + \
-                  "┃🔰┃ " + key + "Stealcover「@」\n" + \
-                  "┃🔰┃ " + key + "Stealvideoprofile「@」\n" + \
-                  "┃🔰┃ " + key + "Mymid\n" + \
-                  "┃🔰┃ " + key + "Mid「@」\n" + \
-                  "┃🔰┃ " + key + "Info 「@」\n" + \
-                  "┃🔰┃ " + key + "Status\n" + \
-                  "┃🔰┃ " + key + "About/ข้อมูล\n" + \
-                  "┃🔰┃ " + key + "Restart\n" + \
-                  "┃🔰┃ " + key + "Runtime\n" + \
-                  "┃🔰┃ " + key + "Creator/ผส\n" + \
-                  "┃🔰┃ " + key + "Respon\n" + \
-                  "┃🔰┃ " + key + "สปีท/Sp\n" + \
-                  "┃🔰┃ " + key + "แตก/Max\n" + \
-                  "┃🔰┃ " + key + "แทค\n" + \
-                  "┃🔰┃ " + key + "Byeme\n" + \
-                  "┃🔰┃ " + key + "Ginfo\n" + \
-                  "┃🔰┃ " + key + "เปิดลิ้ง\n" + \
-                  "┃🔰┃ " + key + "ปิดลิ้ง\n" + \
-                  "┃🔰┃ " + key + "ลิ้งกลุ่ม\n" + \
-                  "┃🔰┃ " + key + "ลบรัน\n" + \
-                  "┃🔰┃ " + key + "Gruplist\n" + \
-                  "┃🔰┃ " + key + "Infogrup「angka」\n" + \
-                  "┃🔰┃ " + key + "Infomem「angka」\n" + \
-                  "┃🔰┃ " + key + "Remove chat\n" + \
-                  "┃🔰┃ " + key + "Lurking「on/off」\n" + \
-                  "┃🔰┃ " + key + "Lurkers\n" + \
-                  "┃🔰┃ " + key + "Sider「on/off」\n" + \
-                  "┃🔰┃ " + key + "Upfoto\n" + \
-                  "┃🔰┃ " + key + "Upgrup\n" + \
-                  "┃🔰┃ " + key + "Broadcast:「Text」\n" + \
-                  "┃🔰┃ " + key + "Setkey「New Key」\n" + \
-                  "┃🔰┃ " + key + "Mykey\n" + \
-                  "┃🔰┃ " + key + "Resetkey\n" + \
-                  "┃🔰┃" + "\n" + \
-                  "┃🔰┃ Gunakan「 " + key + " 」Di Depannya\n" + \
-                  "┃🔰┃━━━━━━━━━" + "\n" + \
-                  "┃🔰┃😈〔 Hiburan 〕😈━" + "\n" + \
-                  "┃🔰┃ " + key + "Musik:「Judul Lagu」\n" + \
-                  "┃🔰┃ " + key + "Musik2:「Judul Lagu」\n" + \
-                  "┃🔰┃ " + key + "Playlist「Nama Penyanyi」\n" + \
-                  "┃🔰┃ " + key + "Ytmp3:「Judul Lagu」\n" + \
-                  "┃🔰┃ " + key + "Ytmp4:「Judul Video\n" + \
-                  "┃🔰┃ " + key + "Fs:「Nama」\n" + \
-                  "┃🔰┃ " + key + "cl-telp:「No HP」\n" + \
-                  "┃🔰┃ " + key + "cl-sms:「No HP」\n" + \
-                  "┃🔰┃ " + key + "Smsgratis:「Nohp:Pesannya」\n" + \
-                  "┃🔰┃ " + key + "Meme@Nama@Teks1@Teks2\n" + \
-                  "┃🔰┃ " + key + "Quotes\n" + \
-                  "┃🔰┃ " + key + "1cak\n" + \
-                  "┃🔰┃ " + key + "Profilesmule:「ID Smule」\n" + \
-                  "┃🔰┃ " + key + "Randomnumber:「Nmor-Nmor」\n" + \
-                  "┃🔰┃ " + key + "Acaratv:「Nama Channel」\n" + \
-                  "┃🔰┃ " + key + "Gimage:「Keyword」\n" + \
-                  "┃🔰┃ " + key + "Img food:「Nama Makanan」\n" + \
-                  "┃🔰┃ " + key + "Al-quran:「Surah」\n" + \
-                  "┃🔰┃ " + key + "Sholat:「Nama Kota」\n" + \
-                  "┃🔰┃ " + key + "Cuaca:「Nama Kota」\n" + \
-                  "┃🔰┃ " + key + "Lokasi:「Nama Kota」\n" + \
-                  "┃🔰┃ " + key + "Profileig:「Nama IG」\n" + \
-                  "┃🔰┃ " + key + "Cekig:「Nama IG」\n" + \
-                  "┃🔰┃ " + key + "Cekdate:「tgl-bln-thn」\n" + \
-                  "┃🔰┃ " + key + "Spamtag:「jumlahnya」\n" + \
-                  "┃🔰┃ " + key + "Spamtag「@」\n" + \
-                  "┃🔰┃ " + key + "Spamcall:「jumlahnya」\n" + \
-                  "┃🔰┃ " + key + "Spamcall\n" + \
-                  "┃🔰┃ " + key + "ID line:「Id Line nya」\n" + \
-                  "┃🔰┃" + "\n" + \
-                  "┃🔰┃😈 Gunakan「 " + key + " 」Di Depannya\n" + \
-                  "┃🔰┃😈〔 Settings 〕😈━" + "\n" + \
-                  "┃🔰┃ " + key + "Unsend「on/off」\n" + \
-                  "┃🔰┃ " + key + "Jointicket「on/off」\n" + \
-                  "┃🔰┃ " + key + "Sticker「on/off」\n" + \
-                  "┃🔰┃ " + key + "Respon「on/off」\n" + \
-                  "┃🔰┃ " + key + "Respongift「on/off」\n" + \
-                  "┃🔰┃ " + key + "Contact「on/off」\n" + \
-                  "┃🔰┃ " + key + "Autojoin「on/off」\n" + \
-                  "┃🔰┃ " + key + "Autoadd「on/off」\n" + \
-                  "┃🔰┃ " + key + "Welcome「on/off」\n" + \
-                  "┃🔰┃ " + key + "Simi「on/off」\n" + \
-                  "┃🔰┃ " + key + "Autoleave「on/off」\n" + \
-                  "┃🔰┃" + "\n" + \
-                  "┃🔰┃😈 Gunakan「 " + key + " 」Di Depannya\n" + \
-                  "┃🔰┃━━━━━━━━━" + "\n" + \
-                  "┃🔰┃😈〔 Admin 〕😈━" + "\n" + \
-                  "┃🔰┃ " + key + "Changenamecreator:「Nama」\n" + \
-                  "┃🔰┃ " + key + "Resetnamecreator\n" + \
-                  "┃🔰┃ " + key + "Admin:on\n" + \
-                  "┃🔰┃ " + key + "Admin:repeat\n" + \
-                  "┃🔰┃ " + key + "Adminadd「@」\n" + \
-                  "┃🔰┃ " + key + "Admindell「@」\n" + \
-                  "┃🔰┃ " + key + "Refresh\n" + \
-                  "┃🔰┃ " + key + "Listadmin\n" + \
-                  "┃🔰┃" + "\n" + \
-                  "┃🔰┃😈 Ketik「 Refresh 」Jika Sudah\n┃😈┃Menggunakan Command Diatas...\n" + \
-                  "┃🔰┃━━━━━━━━━" + "\n" + \
-                  "┃🔰┃" + "\n" + \
-                  "╰━〔BOS: "+ key2 + " 〕"
+    helpMessage = """╔☬═════════════☬
+╠【さัএπัஞ✵ບิथℓℓҨतΩ】
+╠☬═════════════☬
+╠            〔 MENU 〕
+╠☬═════════════☬
+╠☬🇮🇩͜͡➣ Help
+╠☬🇮🇩͜͡➣ Help2
+╠☬🇮🇩͜͡➣ Help3
+╠☬🇮🇩͜͡➣ Help4
+╠☬🇮🇩͜͡➣ Help5
+╠☬🇮🇩͜͡➣ Translate
+╠☬🇮🇩͜͡➣ Autotrans「en-on/off」
+╠☬🇮🇩͜͡➣ Autotrans「id-on/off」
+╠☬🇮🇩͜͡➣ Autotrans「th-on/off」
+╠☬🇮🇩͜͡➣ Autotrans「tw-on/off」
+╠☬🇮🇩͜͡➣ Autotrans「ar-on/off」
+╠☬🇮🇩͜͡➣ Info meme
+╠☬🇮🇩͜͡➣ Self「on/off」
+╠☬🇮🇩͜͡➣ Me
+╠☬🇮🇩͜͡➣ Mycopy「@」
+╠☬🇮🇩͜͡➣ Mybackup
+╠☬🇮🇩͜͡➣ Stealname「@」
+╠☬🇮🇩͜͡➣ Stealbio「@」
+╠☬🇮🇩͜͡➣ Stealpicture「@」
+╠☬🇮🇩͜͡➣ Stealcover「@」
+╠☬🇮🇩͜͡➣ Stealvideoprofile「@」
+╠☬🇮🇩͜͡➣ Mid
+╠☬🇮🇩͜͡➣ Mid「@」
+╠☬🇮🇩͜͡➣ Info 「@」
+╠☬🇮🇩͜͡➣ Status
+╠☬🇮🇩͜͡➣ About
+╠☬🇮🇩͜͡➣ Restart
+╠☬🇮🇩͜͡➣ Runtime
+╠☬🇮🇩͜͡➣ Creator
+╠☬🇮🇩͜͡➣ Respon
+╠☬🇮🇩͜͡➣ Sp
+╠☬🇮🇩͜͡➣ K/Super
+╠☬🇮🇩͜͡➣ Tagall
+╠☬🇮🇩͜͡➣ Byeme
+╠☬🇮🇩͜͡➣ Ginfo
+╠☬🇮🇩͜͡➣ เปิดลิ้ง
+╠☬🇮🇩͜͡➣ ปิดลิ้ง
+╠☬🇮🇩͜͡➣ ลิ้งกลุ่ม
+╠☬🇮🇩͜͡➣ ลบรัน
+╠☬🇮🇩͜͡➣ Gruplist
+╠☬🇮🇩͜͡➣ Infogrup「angka」
+╠☬🇮🇩͜͡➣ Infomem「angka」
+╠☬🇮🇩͜͡➣ Remove chat
+╠☬🇮🇩͜͡➣ Lurking「on/off」
+╠☬🇮🇩͜͡➣ Lurkers
+╠☬🇮🇩͜͡➣ Sider「on/off」
+╠☬🇮🇩͜͡➣ Upfoto
+╠☬🇮🇩͜͡➣ Upgrup
+╠☬🇮🇩͜͡➣ Broadcast:「Text」
+╠☬🇮🇩͜͡➣ Setkey「New Key」
+╠☬🇮🇩͜͡➣ Mykey
+╠☬🇮🇩͜͡➣ Resetkey
+╠☬═════════════☬
+╠          〔 Hiburan 〕
+╠☬═════════════☬
+╠☬🇮🇩͜͡➣ Musik:「Judul Lagu」
+╠☬🇮🇩͜͡➣ Musik2:「Judul Lagu」
+╠☬🇮🇩͜͡➣ Playlist「Nama Penyanyi」
+╠☬🇮🇩͜͡➣ Ytmp3:「Judul Lagu」
+╠☬🇮🇩͜͡➣ Ytmp4:「Judul Video
+╠☬🇮🇩͜͡➣ Fs:「Nama」
+╠☬🇮🇩͜͡➣ cl-telp:「No HP」
+╠☬🇮🇩͜͡➣ cl-sms:「No HP」
+╠☬🇮🇩͜͡➣ Smsgratis:「Nohp:Pesannya」
+╠☬🇮🇩͜͡➣ Meme@Nama@Teks1@Teks2
+╠☬🇮🇩͜͡➣ Quotes
+╠☬🇮🇩͜͡➣ 1cak
+╠☬🇮🇩͜͡➣ Profilesmule:「ID Smule」
+╠☬🇮🇩͜͡➣ Randomnumber:「Nmor-Nmor」
+╠☬🇮🇩͜͡➣ Acaratv:「Nama Channel」
+╠☬🇮🇩͜͡➣ Gimage:「Keyword」
+╠☬🇮🇩͜͡➣ Img food:「Nama Makanan」
+╠☬🇮🇩͜͡➣ Al-quran:「Surah」
+╠☬🇮🇩͜͡➣ Sholat:「Nama Kota」
+╠☬🇮🇩͜͡➣ Cuaca:「Nama Kota」
+╠☬🇮🇩͜͡➣ Lokasi:「Nama Kota」
+╠☬🇮🇩͜͡➣ Profileig:「Nama IG」
+╠☬🇮🇩͜͡➣ Cekig:「Nama IG」
+╠☬🇮🇩͜͡➣ Cekdate:「tgl-bln-thn」
+╠☬🇮🇩͜͡➣ Spamtag:「jumlahnya」
+╠☬🇮🇩͜͡➣ Spamtag「@」
+╠☬🇮🇩͜͡➣ Spamcall:「jumlahnya」
+╠☬🇮🇩͜͡➣ Spamcall
+╠☬🇮🇩͜͡➣ ID line:「Id Line nya」
+╠☬═════════════☬
+╠         〔 Settings 〕
+╠☬═════════════☬
+╠☬🇮🇩͜͡➣ Unsend「on/off」
+╠☬🇮🇩͜͡➣ Jointicket「on/off」
+╠☬🇮🇩͜͡➣ Sticker「on/off」
+╠☬🇮🇩͜͡➣ Respon「on/off」
+╠☬🇮🇩͜͡➣ Respongift「on/off」
+╠☬🇮🇩͜͡➣ Contact「on/off」
+╠☬🇮🇩͜͡➣ Autojoin「on/off」
+╠☬🇮🇩͜͡➣ Autoadd「on/off」
+╠☬🇮🇩͜͡➣ Autoblock「on/off」
+╠☬🇮🇩͜͡➣ Welcome「on/off」
+╠☬🇮🇩͜͡➣ Simi「on/off」
+╠☬🇮🇩͜͡➣ Autoleave「on/off」
+╠☬═════════════☬
+╠           〔 Admin 〕
+╠☬═════════════☬
+╠☬🇮🇩͜͡➣ Changenamecreator:「Nama」
+╠☬🇮🇩͜͡➣ Resetnamecreator
+╠☬🇮🇩͜͡➣ Admin:on
+╠☬🇮🇩͜͡➣ Admin:repeat
+╠☬🇮🇩͜͡➣ Adminadd「@」
+╠☬🇮🇩͜͡➣ Admindell「@」
+╠☬🇮🇩͜͡➣ Refresh
+╠☬🇮🇩͜͡➣ Listadmin
+╠☬═════════════☬
+╠         Menggunakan 
+╠     Command Diatas...
+╠☬═════════════☬
+╚═BY:【さัএπัஞ✵ບิथℓℓҨतΩ】
+"""
     return helpMessage
 
 
 
 def helarot():
-    key = Setmain["keyCommand"]
-    key = key.title()
-    key2 = Setmain["namecreator"]
-    key2 = key2.title()
-    helpMessage1 = "╭━━━━━━━━━━━" + "\n" + \
-                  "┃🎭┃👿"+ key2 +" 👿" + "\n" + \
-                  "┃" + "\n" + \
-                  "┃🎭┃━👿〔 Help Bot 〕👿━" + "\n" + \
-                  "┃🎭┃ Gunakan「 " + key + " 」Di Depannya\n" + \
-                  "┃🎭┃━━━━━━━━━" + "\n" + \
-                  "┃🎭┃👿〔 Menu 〕👿━" + "\n" + \
-                  "┃🎭┃ " + key + "Cek sider\n" + \
-                  "┃🎭┃ " + key + "Cek spam\n" + \
-                  "┃🎭┃ " + key + "Cek pesan\n" + \
-                  "┃🎭┃ " + key + "Cek respon\n" + \
-                  "┃🎭┃ " + key + "Cek welcome\n" + \
-                  "┃🎭┃ " + key + "Cek leave\n" + \
-                  "┃🎭┃ " + key + "Set sider:「Text」\n" + \
-                  "┃🎭┃ " + key + "Set spam:「Text」\n" + \
-                  "┃🎭┃ " + key + "Set pesan:「Text」\n" + \
-                  "┃🎭┃ " + key + "Set respon:「Text」\n" + \
-                  "┃🎭┃ " + key + "Set welcome:「Text」\n" + \
-                  "┃🎭┃ " + key + "Set leave:「Text」\n" + \
-                  "┃🎭┃ " + key + "Myname:「Nama」\n" + \
-                  "┃🎭┃ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
-                  "┃🎭┃ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
-                  "┃🎭┃" + "\n" + \
-                  "┃🎭┃👿 Ketik「 Refresh 」Jika Sudah\n┃Menggunakan Command Diatas...\n" + \
-                  "┃━━━━━━━━━━━" + "\n" + \
-                  "┃" + "\n" + \
-                  "╰━〔BOS: "+ key2 +" 〕"
+    helpMessage1 = """╔☬═════════════☬
+╠【さัএπัஞ✵ບิथℓℓҨतΩ】
+╠☬═════════════☬
+╠         〔 HELP BOT〕
+╠☬═════════════☬
+╠            〔 MENU 〕
+╠☬═════════════☬
+╠☬🇮🇩͜͡➣ Cek sider
+╠☬🇮🇩͜͡➣ Cek spam
+╠☬🇮🇩͜͡➣ Cek pesan
+╠☬🇮🇩͜͡➣ Cek respon
+╠☬🇮🇩͜͡➣ Cek welcome
+╠☬🇮🇩͜͡➣ Cek leave
+╠☬🇮🇩͜͡➣ Set sider:「Text」
+╠☬🇮🇩͜͡➣ Set spam:「Text」
+╠☬🇮🇩͜͡➣ Set pesan:「Text」
+╠☬🇮🇩͜͡➣ Set respon:「Text」
+╠☬🇮🇩͜͡➣ Set welcome:「Text」
+╠☬🇮🇩͜͡➣ Set leave:「Text」
+╠☬🇮🇩͜͡➣ Myname:「Nama」
+╠☬🇮🇩͜͡➣ Gift:「Mid korban」「Jumlah」
+╠☬🇮🇩͜͡➣ Spam:「Mid korban」「Jumlah」
+╠☬═════════════☬
+╠         Menggunakan 
+╠     Command Diatas...
+╠☬═════════════☬
+╚═BY:【さัএπัஞ✵ບิथℓℓҨतΩ】
+"""
     return helpMessage1
 
 def infomeme():
     helpMessage2 = """
 ╭━━━━━━━━━━━
-┃  🔰 Meme List 🔰
+┃  🇮🇩 Meme List 🇮🇩
 ┃━━━━━━━━━━━
-┃🔰┃ Buzz
-┃🔰┃ Spongebob
-┃🔰┃ Patrick
-┃🔰┃ Doge
-┃🔰┃ Joker
-┃🔰┃ Xzibit
-┃🔰┃ You_tried
-┃🔰┃ cb
-┃🔰┃ blb
-┃🔰┃ wonka
-┃🔰┃ keanu
-┃🔰┃ cryingfloor
-┃🔰┃ disastergirl
-┃🔰┃ facepalm
-┃🔰┃ fwp
-┃🔰┃ grumpycat
-┃🔰┃ captain
-┃🔰┃ mmm
-┃🔰┃ rollsafe
-┃🔰┃ sad-obama
-┃🔰┃ sad-clinton
-┃🔰┃ aag
-┃🔰┃ sarcasticbear
-┃🔰┃ sk
-┃🔰┃ sparta
-┃🔰┃ aag
+┃🇮🇩┃ Buzz
+┃🇮🇩┃ Spongebob
+┃🇮🇩┃ Patrick
+┃🇮🇩┃ Doge
+┃🇮🇩┃ Joker
+┃🇮🇩┃ Xzibit
+┃🇮🇩┃ You_tried
+┃🇮🇩┃ cb
+┃🇮🇩┃ blb
+┃🇮🇩┃ wonka
+┃🇮🇩┃ keanu
+┃🇮🇩┃ cryingfloor
+┃🇮🇩┃ disastergirl
+┃🇮🇩┃ facepalm
+┃🇮🇩┃ fwp
+┃🇮🇩┃ grumpycat
+┃🇮🇩┃ captain
+┃🇮🇩┃ mmm
+┃🇮🇩┃ rollsafe
+┃🇮🇩┃ sad-obama
+┃🇮🇩┃ sad-clinton
+┃🇮🇩┃ aag
+┃🇮🇩┃ sarcasticbear
+┃🇮🇩┃ sk
+┃🇮🇩┃ sparta
+┃🇮🇩┃ aag
 ┃━━━━━━━━━━━
-┃    🎓 BY : MAXSY 🎓
-┃ 💜 line.me/ti/p/~max_pv 💜
+┃    🐯 BY : MAXSY 🐯
+┃ 💜 line.me/ti/p/~bots_line 💜
 ╰━━━━━━━━━━━
 """
     return helpMessage2
@@ -566,7 +560,7 @@ def listharga():
 🔰 Self Bot + 10 Assist + 2 Ghost + 1 AntiJS ⏩ 450K/Bulan
 
 ✍️ Bisa Requests Mau Berapa Assist Buat Py3.
-Chat Ke : http://line.me/ti/p/~max_pv
+Chat Ke : http://line.me/ti/p/~bots_line
 
 📃
 * Always on 24 Jam
@@ -575,7 +569,7 @@ Chat Ke : http://line.me/ti/p/~max_pv
 * Speed Python3 0.02S
 # Buat Assist, Pake Akun Dari Kami Harga Beda Lagi.
 """
-
+    return helpMessage2
 def translate():
     helpTranslate =     "╭━━〔 T R A N S L A T E 〕" + "\n" + \
                        "┃🔰┃ af : afrikaans" + "\n" + \
@@ -756,8 +750,12 @@ def bot(op):
                         pass
                     else:
                         cl.sendMessage(op.param1, wait["message"])
-                        cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
-                        cl.blockContact(op.param1)
+                        cl.sendContact(op.param1, "ub8fd0c502d6d52c35d8bc6fcced407d0")
+
+        if op.type == 5:
+            print ("[ 5 ] NOTIFIED AUTO BLOCK CONTACT")
+            if wait["autoBlock"] == True:
+                cl.blockContact(op.param1)
 
         if op.type == 55:
             try:
@@ -1098,10 +1096,10 @@ def bot(op):
                         cmd = command(text)
                         if cmd == "help":
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
+                            #if msg._from in admin:
                                helpMessage = help()
                                cl.sendMessage(msg.to, str(helpMessage))
-                               cl.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
+                               cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
  
                         if cmd == "self on":
                             if msg._from in admin:
@@ -1113,25 +1111,34 @@ def bot(op):
                                 wait["selfbot"] = False
                                 cl.sendMessage(msg.to, "Selfbot dinonaktifkan")
 
-                        elif cmd == "help bot":
+                        elif cmd == "help2":
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
+                            #if msg._from in admin:
                                helpMessage1 = helarot()
                                cl.sendMessage(msg.to, str(helpMessage1))
-                               cl.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
+                               cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
  
-                        elif cmd == "info meme":
+                        elif cmd == "help3":
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
+                            #if msg._from in admin:
                                helpMessage2 = infomeme()
                                cl.sendMessage(msg.to, str(helpMessage2))
-
-                        elif cmd == "translate":
+                               cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
+ 
+                        elif cmd == "help4":
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
+                            #if msg._from in admin:
+                               helpMessage3 = listharga()
+                               cl.sendMessage(msg.to, str(helpMessage3))
+                               cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
+ 
+                        elif cmd == "help5":
+                          if wait["selfbot"] == True:
+                            #if msg._from in admin:
                                helpTranslate = translate()
                                cl.sendMessage(msg.to, str(helpTranslate))
-
+                               cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
+ 
                         if cmd == "unsend on":
                             if msg._from in admin:
                                 wait["unsend"] = True
@@ -1144,57 +1151,57 @@ def bot(op):
 
                         elif cmd == "status":
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
+                            #if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "-▬▬▬▬▬▬▬▬▬▬▬▬\n          🔰 S T A T U S 🔰\n-▬▬▬▬▬▬▬▬▬▬▬▬\n"
-                                if wait["unsend"] == True: md+="┃🔰┃ ✔️ Unsend「ON」\n"
-                                else: md+="┃🔰┃ ✖ Unsend「OFF」\n"
-                                if wait["sticker"] == True: md+="┃🔰┃ ✔️ Sticker「ON」\n"
-                                else: md+="┃🔰┃ ✖ Sticker「OFF」\n"
-                                if wait["contact"] == True: md+="┃🔰┃ ✔️ Contact「ON」\n"
-                                else: md+="┃🔰┃ ✖ Contact「OFF」\n"
-                                if wait["Mentionkick"] == True: md+="┃🔰┃ ✔️ Notag「ON」\n"
-                                else: md+="┃🔰┃ ✖ Notag「OFF」\n"
-                                if wait["detectMention"] == True: md+="┃🔰┃ ✔️ Respon「ON」\n"
-                                else: md+="┃🔰┃ ✖ Respon「OFF」\n"
-                                if wait["Mentiongift"] == True: md+="┃🔰┃ ✔️ Respongift「ON」\n"
-                                else: md+="┃🔰┃ ✖ Respongift「OFF」\n"
-                                if wait["autoJoin"] == True: md+="┃🔰┃ ✔️ Autojoin「ON」\n"
-                                else: md+="┃🔰┃ ✖ Autojoin「OFF」\n"
-                                if settings["autoJoinTicket"] == True: md+="┃🔰┃ ✔️ Join Ticket「ON」\n"
-                                else: md+="┃🔰┃ ✖ Join Ticket「OFF」\n"
-                                if msg.to in simisimi: md+="┃🔰┃ ✔️ Simisimi「ON」\n"
-                                else: md+="┃🔰┃ ✖ Simisimi「OFF」\n"
-                                if wait["autoAdd"] == True: md+="┃🔰┃ ✔️ Autoadd「ON」\n"
-                                else: md+="┃🔰┃ ✖ Autoadd「OFF」\n"
-                                if msg.to in welcome: md+="┃🔰┃ ✔️ Welcome「ON」\n"
-                                else: md+="┃🔰┃ ✖ Welcome「OFF」\n"
-                                if wait["autoLeave"] == True: md+="┃🔰┃ ✔️ Autoleave「ON」\n"
-                                else: md+="┃🔰┃ ✖ Autoleave「OFF」\n"
+                                md = "-▬▬▬▬▬▬▬▬▬▬▬▬\n      💀 S T A T U S 💀\n-▬▬▬▬▬▬▬▬▬▬▬▬\n"
+                                if wait["unsend"] == True: md+="┃💀┃ ✔️ Unsend「ON」\n"
+                                else: md+="┃💀┃ ✖ Unsend「OFF」\n"
+                                if wait["sticker"] == True: md+="┃💀┃ ✔️ Sticker「ON」\n"
+                                else: md+="┃💀┃ ✖ Sticker「OFF」\n"
+                                if wait["contact"] == True: md+="┃💀┃ ✔️ Contact「ON」\n"
+                                else: md+="┃💀┃ ✖ Contact「OFF」\n"
+                                if wait["Mentionkick"] == True: md+="┃💀┃ ✔️ Notag「ON」\n"
+                                else: md+="┃💀┃ ✖ Notag「OFF」\n"
+                                if wait["detectMention"] == True: md+="┃💀┃ ✔️ Respon「ON」\n"
+                                else: md+="┃💀┃ ✖ Respon「OFF」\n"
+                                if wait["Mentiongift"] == True: md+="┃💀┃ ✔️ Respongift「ON」\n"
+                                else: md+="┃💀┃ ✖ Respongift「OFF」\n"
+                                if wait["autoJoin"] == True: md+="┃💀┃ ✔️ Autojoin「ON」\n"
+                                else: md+="┃💀┃ ✖ Autojoin「OFF」\n"
+                                if settings["autoJoinTicket"] == True: md+="┃💀┃ ✔️ Join Ticket「ON」\n"
+                                else: md+="┃💀┃ ✖ Join Ticket「OFF」\n"
+                                if msg.to in simisimi: md+="┃💀┃ ✔️ Simisimi「ON」\n"
+                                else: md+="┃💀┃ ✖ Simisimi「OFF」\n"
+                                if wait["autoAdd"] == True: md+="┃💀┃ ✔️ Autoadd「ON」\n"
+                                else: md+="┃💀┃ ✖ Autoadd「OFF」\n"
+                                if msg.to in welcome: md+="┃💀┃ ✔️ Welcome「ON」\n"
+                                else: md+="┃💀┃ ✖ Welcome「OFF」\n"
+                                if wait["autoLeave"] == True: md+="┃💀┃ ✔️ Autoleave「ON」\n"
+                                else: md+="┃💀┃ ✖ Autoleave「OFF」\n"
                                 cl.sendMessage(msg.to, md+"-▬▬▬▬▬▬▬▬▬▬▬▬\n┃☬ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n┃☬ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n-▬▬▬▬▬▬▬▬▬▬▬▬")
-                                cl.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
+                                cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
  
                         elif cmd == "status translate":
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
+                            #if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "-▬▬▬▬▬▬▬▬▬▬▬▬\n 🔰 STATUS TRANSLATE 🔰\n-▬▬▬▬▬▬▬▬▬▬▬▬\n"
-                                if msg.to in translatetr: md+="┃🔰┃ ✔️ Turkish「ON」\n"
-                                else: md+="┃🔰┃ ✖ Turkish 「OFF」\n"
-                                if msg.to in translateen: md+="┃🔰┃ ✔️ English「ON」\n"
-                                else: md+="┃🔰┃ ✖ English「OFF」\n"
-                                if msg.to in translateid: md+="┃🔰┃ ✔️ Indonesia「ON」\n"
-                                else: md+="┃🔰┃ ✖ Indonesia「OFF」\n"
-                                if msg.to in translateth: md+="┃🔰┃ ✔️ Thailand「ON」\n"
-                                else: md+="┃🔰┃ ✖ Thailand「OFF」\n"
-                                if msg.to in translatetw: md+="┃🔰┃ ✔️ Taiwan「ON」\n"
-                                else: md+="┃🔰┃ ✖ Taiwan「OFF」\n"
-                                if msg.to in translatear: md+="┃🔰┃ ✔️ Arab「ON」\n"
-                                else: md+="┃🔰┃ ✖ Arab「OFF」\n"
+                                md = "-▬▬▬▬▬▬▬▬▬▬▬▬\n🐯 STATUS TRANSLATE 🐯\n-▬▬▬▬▬▬▬▬▬▬▬▬\n"
+                                if msg.to in translatetr: md+="┃🐯┃ ✔️ Turkish「ON」\n"
+                                else: md+="┃🐯┃ ✖ Turkish 「OFF」\n"
+                                if msg.to in translateen: md+="┃🐯┃ ✔️ English「ON」\n"
+                                else: md+="┃🐯┃ ✖ English「OFF」\n"
+                                if msg.to in translateid: md+="┃🐯┃ ✔️ Indonesia「ON」\n"
+                                else: md+="┃🐯┃ ✖ Indonesia「OFF」\n"
+                                if msg.to in translateth: md+="┃🐯┃ ✔️ Thailand「ON」\n"
+                                else: md+="┃🐯┃ ✖ Thailand「OFF」\n"
+                                if msg.to in translatetw: md+="┃🐯┃ ✔️ Taiwan「ON」\n"
+                                else: md+="┃🐯┃ ✖ Taiwan「OFF」\n"
+                                if msg.to in translatear: md+="┃🐯┃ ✔️ Arab「ON」\n"
+                                else: md+="┃🐯┃ ✖ Arab「OFF」\n"
                                 cl.sendMessage(msg.to, md+"-▬▬▬▬▬▬▬▬▬▬▬▬\n┃☬ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n┃☬ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n-▬▬▬▬▬▬▬▬▬▬▬▬")
-                                cl.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
+                                cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
  
                         elif cmd == "ผส" or text.lower() == 'creator':
                             if msg._from in admin:
@@ -1617,57 +1624,122 @@ def bot(op):
                             if msg._from in admin:
                                group = cl.getGroup(msg.to)
                                nama = [contact.mid for contact in group.members]
-                               nm1, nm2, nm3, nm4, jml = [], [], [], [], len(nama)
-                               if jml <= 100:
+                               nm1, nm2, nm3, nm4,nm5,nm6,nm7, jml = [], [], [], [],[], [], [], len(nama)
+                               if jml <= 20:
                                    mentionMembers(msg.to, nama)
-                               if jml > 100 and jml < 200:
-                                   for i in range (0, 99):
+                               if jml > 20 and jml < 40:
+                                   for i in range (0, 19):
                                        nm1 += [nama[i]]
                                    mentionMembers(msg.to, nm1)
-                                   for j in range (100, len(nama)-1):
+                                   for j in range (20, len(nama)-1):
                                        nm2 += [nama[j]]
                                    mentionMembers(msg.to, nm2)
-                               if jml > 200 and jml < 300:
-                                   for i in range (0, 99):
+                               if jml > 40 and jml < 60:
+                                   for i in range (0, 19):
                                        nm1 += [nama[i]]
                                    mentionMembers(msg.to, nm1)
-                                   for j in range (100, 199):
+                                   for j in range (20, 39):
                                        nm2 += [nama[j]]
                                    mentionMembers(msg.to, nm2)
-                                   for k in range (200, len(nama)-1):
+                                   for k in range (40, len(nama)-1):
                                        nm3 += [nama[k]]
                                    mentionMembers(msg.to, nm3)
-                               if jml > 300 and jml < 400:
-                                   for i in range (0, 99):
+                               if jml > 60 and jml < 80:
+                                   for i in range (0, 19):
                                        nm1 += [nama[i]]
                                    mentionMembers(msg.to, nm1)
-                                   for j in range (100, 199):
+                                   for j in range (20, 39):
                                        nm2 += [nama[j]]
                                    mentionMembers(msg.to, nm2)
-                                   for k in range (200, 299):
+                                   for k in range (40, 59):
                                        nm3 += [nama[k]]
                                    mentionMembers(msg.to, nm3)
-                                   for l in range (300, len(nama)-1):
+                                   for l in range (60, len(nama)-1):
                                        nm4 += [nama[l]]
                                    mentionMembers(msg.to, nm4)
-                               if jml > 400 and jml < 500:
-                                   for i in range (0, 99):
+                               if jml > 80 and jml < 100:
+                                   for i in range (0, 19):
                                        nm1 += [nama[i]]
                                    mentionMembers(msg.to, nm1)
-                                   for j in range (100, 199):
+                                   for j in range (20, 39):
                                        nm2 += [nama[j]]
                                    mentionMembers(msg.to, nm2)
-                                   for k in range (200, 299):
+                                   for k in range (40, 59):
                                        nm3 += [nama[k]]
                                    mentionMembers(msg.to, nm3)
-                                   for l in range (300, 399):
+                                   for l in range (60, 79):
                                        nm4 += [nama[l]]
                                    mentionMembers(msg.to, nm4)
-                                   for m in range (400, len(nama)-1):
+                                   for m in range (80, len(nama)-1):
                                        nm5 += [nama[m]]
                                    mentionMembers(msg.to, nm5)
-
-                        elif cmd == "แทค":
+                               if jml > 100 and jml < 120:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, len(nama)-1):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                               if jml > 120 and jml < 140:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, len(nama)-1):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                               if jml > 140 and jml < 160:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, len(nama)-1):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                        elif cmd == "mention":
                           if wait["selfbot"] == True:
                             group = cl.getGroup(msg.to)
                             nama = [contact.mid for contact in group.members]
@@ -1719,9 +1791,9 @@ def bot(op):
                                 get_contact_time = time.time() - get_contact_time_start
                                 cl.sendMessage(msg.to, " ☬ BOT Speed respon\n\n - Get Profile\n   %.10f\n - Get Contact\n   %.10f\n - Get Group\n   %.10f" % (get_profile_time/3,get_contact_time/3,get_group_time/3))
 
-                        elif cmd == "สปีท" or cmd == "sp":
+                        elif cmd == "speed" or cmd == "sp":
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
+                            #if msg._from in admin:
                                start = time.time()
                                cl.sendMessage(msg.to, "Progres speed...")
                                elapsed_time = time.time() - start
@@ -1729,7 +1801,7 @@ def bot(op):
 
                         elif cmd == "lurking on":
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
+                            #if msg._from in admin:
                                  tz = pytz.timezone("Asia/Jakarta")
                                  timeNow = datetime.now(tz=tz)
                                  Setmain['ARreadPoint'][msg.to] = msg_id
@@ -1738,7 +1810,7 @@ def bot(op):
 
                         elif cmd == "lurking off":
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
+                            #if msg._from in admin:
                                  tz = pytz.timezone("Asia/Jakarta")
                                  timeNow = datetime.now(tz=tz)
                                  del Setmain['ARreadPoint'][msg.to]
@@ -1746,7 +1818,7 @@ def bot(op):
                                  cl.sendMessage(msg.to, "Lurking berhasil dinoaktifkan\n\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
 
                         elif cmd == "lurkers":
-                          if msg._from in admin:
+                          #if msg._from in admin:
                             if msg.to in Setmain['ARreadPoint']:
                                 if Setmain['ARreadMember'][msg.to] != {}:
                                     aa = []
@@ -1798,7 +1870,7 @@ def bot(op):
 
                         elif cmd == "sider on":
                           if wait["selfbot"] == True:
-                           if msg._from in admin:
+                           #if msg._from in admin:
                               try:
                                   tz = pytz.timezone("Asia/Jakarta")
                                   timeNow = datetime.now(tz=tz)
@@ -1814,7 +1886,7 @@ def bot(op):
 
                         elif cmd == "sider off":
                           if wait["selfbot"] == True:
-                           if msg._from in admin:
+                           #if msg._from in admin:
                               if msg.to in cctv['point']:
                                   tz = pytz.timezone("Asia/Jakarta")
                                   timeNow = datetime.now(tz=tz)
@@ -3509,7 +3581,7 @@ def bot(op):
                                     else:
                                          msgs = "Welcome Msg sudah tidak aktif"
                                     cl.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)
-                        elif ("แตก " in msg.text):
+                        elif ("K " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -3558,28 +3630,7 @@ def bot(op):
                                     p.close()
                                 except:
                                     p.close()
-                        elif text.lower() == 'max':
-                            if msg.toType == 2:
-                                gs = cl.getGroup(msg.to)
-                                #gs = ar1.getGroup(msg.to)
-                                #gs = ar2.getGroup(msg.to)
-                                targets = []
-                                for g in gs.members:
-                                    targets.append(g.mid)
-                                targets.remove(mid)
-                                if targets == []:
-                                    cl.sendText(msg.to,"kayak nya limit")
-                                else:
-                                    for target in targets:
-                                      if target not in Bots:
-                                        try:
-                                            klist=[cl]
-                                            kicker=random.choice(klist)
-                                            kicker.kickoutFromGroup(msg.to,[target])
-                                            print (msg.to,[g.mid])
-                                        except:
-                                           pass
-                        elif text.lower() == 'broken':
+                        elif text.lower() == 'super':
                             if msg._from in admin:
                                 if msg.toType == 2:
                                     gs = cl.getGroup(msg.to)
@@ -3606,7 +3657,7 @@ def bot(op):
                                             print (msg.to,[g.mid])
                                         except:
                                            pass
-                        elif msg.text in ['cancel']:
+                        elif msg.text in ['.cancel']:
                             if msg.toType == 2:
                                 #if msg._from in admin:
                                 group = cl.getGroup(msg.to)
