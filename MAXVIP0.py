@@ -104,11 +104,11 @@ wait = {
     "selfbot":True,
     "unsend":True,
     "mention":"Hayoo ngintip -_-",
-    "Respontag":"╭❂➣━━━━━━━━➣\n┃❂ จะแทคหาพ่อมึงหรอ\n╰❂➣━━━━━━━━➣",
+    "Respontag":"╭❂➣━━━━━━━━➣\n┃❂ จะแทคหาพ่อมึงหรอ 💀\n╰❂➣━━━━━━━━➣",
     "welcome":"selamat datang",
     "leave":"NAH LOH BAPER KHAAAN KHAAAN 😂",
     "comment":"Like like & like by【さัএπัஞ✵ບิथℓℓҨतΩ】",
-    "message":"【さัএπัஞ✵ບิथℓℓҨतΩ】 :\nList opsi\n🤖 Pasangan Hidup :\n🔰 Only Status ⏩ 180K/Bulan\n\n🤖 Systim Contract :\n🔰 Only Curhat ⏩ 100K/Bulan\n🔰 Zona Friend + TTM\n🔰 Zona Nyaman + Full Care + On 5day + 2 day free ⏩ 300K/Bulan\n\n✍️ Bisa Requests Mau Berapa Lama Durasi Buat Debay.\nChat Ke : http://line.me/ti/p/~max_pv\n\n📃\n* Always on 24 Jam\n* Keuntungan Banyak\n* Durasi min 0.25month\n* max no limit",
+    "message":"【さัএπัஞ✵ບิथℓℓҨतΩ】 :\nList opsi\n🤖 Pasangan Hidup :\n🔰 Only Status ⏩ 180K/Bulan\n\n🤖 Systim Contract :\n🔰 Only Curhat ⏩ 100K/Bulan\n🔰 Zona Friend + TTM\n🔰 Zona Nyaman + Full Care + On 5day + 2 day free ⏩ 300K/Bulan\n\n✍️ Bisa Requests Mau Berapa Lama Durasi Buat Debay.\nChat Ke : http://line.me/ti/p/~bots_line\n\n📃\n* Always on 24 Jam\n* Keuntungan Banyak\n* Durasi min 0.25month\n* max no limit",
     }
 
 read = {
@@ -1038,7 +1038,7 @@ def bot(op):
                         contact = cl.getContact(msg.contentMetadata["mid"])
                         path = cl.getContact(msg.contentMetadata["mid"]).picturePath
                         image = 'http://dl.profile.line.naver.jp'+path
-                        cl.sendMessage(msg.to,"☬ Nama : " + msg.contentMetadata["displayName"] + "\n🔰 MID : " + msg.contentMetadata["mid"] + "\n🔰 Status Msg : " + contact.statusMessage + "\n🔰 Picture URL : http://dl.profile.line-cdn.net/" + contact.pictureStatus)
+                        cl.sendMessage(msg.to,"☬ Nama : " + msg.contentMetadata["displayName"] + "\n☬ MID : " + msg.contentMetadata["mid"] + "\n☬ Status Msg : " + contact.statusMessage + "\n☬ Picture URL : http://dl.profile.line-cdn.net/" + contact.pictureStatus)
                         cl.sendImageWithURL(msg.to, image)
 #ADD ADMIN
                  if msg._from in admin:
@@ -1156,7 +1156,7 @@ def bot(op):
                             #if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "-▬▬▬▬▬▬▬▬▬▬▬▬\n      💀 S T A T U S 💀\n-▬▬▬▬▬▬▬▬▬▬▬▬\n"
+                                md = "-▬▬▬▬▬▬▬▬▬▬▬▬\n       💀 S T A T U S 💀\n-▬▬▬▬▬▬▬▬▬▬▬▬\n"
                                 if wait["unsend"] == True: md+="┃💀┃ ✔️ Unsend「ON」\n"
                                 else: md+="┃💀┃ ✖ Unsend「OFF」\n"
                                 if wait["sticker"] == True: md+="┃💀┃ ✔️ Sticker「ON」\n"
@@ -1221,12 +1221,12 @@ def bot(op):
 
                         elif cmd == "me" or text.lower() == 'คท':
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
+                            #if msg._from in admin:
                                msg.contentType = 13
                                msg.contentMetadata = {'mid': msg._from}
                                cl.sendMessage1(msg)
 
-                        elif text.lower() == "mymid":
+                        elif text.lower() == "mid":
                                cl.sendMessage(msg.to, msg._from)
 
                         elif ("Mid " in msg.text):
@@ -1422,7 +1422,7 @@ def bot(op):
 
                         elif cmd == "runtime":
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
+                            #if msg._from in admin:
                                eltime = time.time() - mulai
                                bot = "Aktif " +waktu(eltime)
                                cl.sendMessage(msg.to,bot)
