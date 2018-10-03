@@ -104,7 +104,7 @@ wait = {
     "selfbot":True,
     "unsend":True,
     "mention":"Hayoo ngintip -_-",
-    "Respontag":"╭❂➣━━━━━━━━➣\n┃❂ อะไรคิดถึงกันหรอ\n╰❂➣━━━━━━━━➣",
+    "Respontag":"╭❂➣━━━━━━━━➣\n┃❂ จะแทคหาพ่อมึงหรอ\n╰❂➣━━━━━━━━➣",
     "welcome":"selamat datang",
     "leave":"NAH LOH BAPER KHAAAN KHAAAN 😂",
     "comment":"Like like & like by【さัএπัஞ✵ບิथℓℓҨतΩ】",
@@ -359,11 +359,11 @@ def help():
 ╠☬═════════════☬
 ╠            〔 MENU 〕
 ╠☬═════════════☬
-╠☬🇮🇩͜͡➣ Help
-╠☬🇮🇩͜͡➣ Help2
-╠☬🇮🇩͜͡➣ Help3
-╠☬🇮🇩͜͡➣ Help4
-╠☬🇮🇩͜͡➣ Help5
+╠☬🇮🇩͜͡➣ Help「ทุกคนพิมได้」
+╠☬🇮🇩͜͡➣ Help2「ทุกคนพิมได้」
+╠☬🇮🇩͜͡➣ Help3「ทุกคนพิมได้」
+╠☬🇮🇩͜͡➣ Help4「ทุกคนพิมได้」
+╠☬🇮🇩͜͡➣ Help5「ทุกคนพิมได้」
 ╠☬🇮🇩͜͡➣ Translate
 ╠☬🇮🇩͜͡➣ Autotrans「en-on/off」
 ╠☬🇮🇩͜͡➣ Autotrans「id-on/off」
@@ -392,12 +392,14 @@ def help():
 ╠☬🇮🇩͜͡➣ Sp
 ╠☬🇮🇩͜͡➣ K/Super
 ╠☬🇮🇩͜͡➣ Tagall
+╠☬🇮🇩͜͡➣ Mention「ทุกคนพิมได้」
 ╠☬🇮🇩͜͡➣ Byeme
 ╠☬🇮🇩͜͡➣ Ginfo
 ╠☬🇮🇩͜͡➣ เปิดลิ้ง
 ╠☬🇮🇩͜͡➣ ปิดลิ้ง
 ╠☬🇮🇩͜͡➣ ลิ้งกลุ่ม
 ╠☬🇮🇩͜͡➣ ลบรัน
+╠☬🇮🇩͜͡➣ ลบแชท
 ╠☬🇮🇩͜͡➣ Gruplist
 ╠☬🇮🇩͜͡➣ Infogrup「angka」
 ╠☬🇮🇩͜͡➣ Infomem「angka」
@@ -1426,7 +1428,7 @@ def bot(op):
                                cl.sendMessage(msg.to,bot)
 
                         elif cmd == "ginfo":
-                          if msg._from in admin:
+                          #if msg._from in admin:
                             try:
                                 G = cl.getGroup(msg.to)
                                 if G.invitee is None:
@@ -1779,7 +1781,7 @@ def bot(op):
 
                         elif cmd == "sprespon":
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
+                            #if msg._from in admin:
                                 get_profile_time_start = time.time()
                                 get_profile = cl.getProfile()
                                 get_profile_time = time.time() - get_profile_time_start
@@ -2385,7 +2387,7 @@ def bot(op):
                             usia = data["data"]["usia"]
                             ultah = data["data"]["ultah"]
                             zodiak = data["data"]["zodiak"]
-                            cl.sendMessage(msg.to,"🔰 I N F O R M A S I ����\n\n"+"🔰 Date Of Birth : "+lahir+"\n🔰 Age : "+usia+"\n🔰 Ultah : "+ultah+"\n🔰 Zodiak : "+zodiak)
+                            cl.sendMessage(msg.to,"🐯 I N F O R M A S I 🐯\n\n"+"🐯 Date Of Birth : "+lahir+"\n🐯 Age : "+usia+"\n🐯 Ultah : "+ultah+"\n🐯 Zodiak : "+zodiak)
 
                         elif cmd.startswith("spamtag: "):
                           if wait["selfbot"] == True:
@@ -3801,6 +3803,18 @@ def bot(op):
                             if msg._from in admin:
                                 wait["autoLeave"] = False
                                 cl.sendMessage(msg.to,"Autoleave dinonaktifkan")
+
+                        elif cmd == "autoblock on" or text.lower() == 'autoblock on':
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                                wait["autoBlock"] = True
+                                cl.sendMessage(msg.to,"Auto block diaktifkan")
+
+                        elif cmd == "autoblock off" or text.lower() == 'autoblock off':
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                                wait["autoBlock"] = False
+                                cl.sendMessage(msg.to,"Auto block diaktifkan")
 
                         elif cmd == "autoadd on" or text.lower() == 'autoadd on':
                           if wait["selfbot"] == True:
