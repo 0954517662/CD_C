@@ -359,12 +359,11 @@ def help():
 ╠☬═════════════☬
 ╠            〔 MENU 〕
 ╠☬═════════════☬
-╠☬🇮🇩͜͡➣ Help「ทุกคนพิมได้」
-╠☬🇮🇩͜͡➣ Help2「ทุกคนพิมได้」
-╠☬🇮🇩͜͡➣ Help3「ทุกคนพิมได้」
-╠☬🇮🇩͜͡➣ Help4「ทุกคนพิมได้」
-╠☬🇮🇩͜͡➣ Help5「ทุกคนพิมได้」
-╠☬🇮🇩͜͡➣ Translate
+╠☬🇮🇩͜͡➣ Help
+╠☬🇮🇩͜͡➣ Help2
+╠☬🇮🇩͜͡➣ Help3
+╠☬🇮🇩͜͡➣ Help4
+╠☬🇮🇩͜͡➣ Help5
 ╠☬🇮🇩͜͡➣ Autotrans「en-on/off」
 ╠☬🇮🇩͜͡➣ Autotrans「id-on/off」
 ╠☬🇮🇩͜͡➣ Autotrans「th-on/off」
@@ -392,7 +391,7 @@ def help():
 ╠☬🇮🇩͜͡➣ Sp
 ╠☬🇮🇩͜͡➣ K/Super
 ╠☬🇮🇩͜͡➣ Tagall
-╠☬🇮🇩͜͡➣ Mention「ทุกคนพิมได้」
+╠☬🇮🇩͜͡➣ Mention
 ╠☬🇮🇩͜͡➣ Byeme
 ╠☬🇮🇩͜͡➣ Ginfo
 ╠☬🇮🇩͜͡➣ เปิดลิ้ง
@@ -571,7 +570,7 @@ Chat Ke : http://line.me/ti/p/~bots_line
 * Speed Python3 0.02S
 # Buat Assist, Pake Akun Dari Kami Harga Beda Lagi.
 """
-    return helpMessage2
+    return helpMessage3
 def translate():
     helpTranslate =     "╭━━〔 T R A N S L A T E 〕" + "\n" + \
                        "┃🔰┃ af : afrikaans" + "\n" + \
@@ -1115,28 +1114,28 @@ def bot(op):
 
                         elif cmd == "help2":
                           if wait["selfbot"] == True:
-                            #if msg._from in admin:
+                            if msg._from in admin:
                                helpMessage1 = helarot()
                                cl.sendMessage(msg.to, str(helpMessage1))
                                cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
  
                         elif cmd == "help3":
                           if wait["selfbot"] == True:
-                            #if msg._from in admin:
+                            if msg._from in admin:
                                helpMessage2 = infomeme()
                                cl.sendMessage(msg.to, str(helpMessage2))
                                cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
  
                         elif cmd == "help4":
                           if wait["selfbot"] == True:
-                            #if msg._from in admin:
+                            if msg._from in admin:
                                helpMessage3 = listharga()
                                cl.sendMessage(msg.to, str(helpMessage3))
                                cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
  
                         elif cmd == "help5":
                           if wait["selfbot"] == True:
-                            #if msg._from in admin:
+                            if msg._from in admin:
                                helpTranslate = translate()
                                cl.sendMessage(msg.to, str(helpTranslate))
                                cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
