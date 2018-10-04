@@ -92,7 +92,7 @@ wait = {
     "Talkdblacklist":False,
     "talkban":True,
     "contact":False,
-    'autoJoin':True,
+    'autoJoin':False,
     'autoAdd':True,
     'autoLeave':False,
     'autoLeave1':False,
