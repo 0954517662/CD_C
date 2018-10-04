@@ -733,7 +733,7 @@ def bot(op):
                     else:
                         cl.acceptGroupInvitation(op.param1)
                         ginfo = cl.getGroup(op.param1)
-                        cl.sendMessage(op.param1,"สวัสดี 😊 " + str(ginfo.name))
+                        cl.sendMessage(op.param1,"Hey all " + str(ginfo.name))
 
         if op.type == 15:
             if op.param1 in welcome:
