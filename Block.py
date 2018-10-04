@@ -554,25 +554,37 @@ def infomeme():
     return helpMessage2
 def listharga():
     helpMessage3 = """
-#Price List【さัএπัஞ✵ບิथℓℓҨतΩ】:
+🤖 เปิดเช่าลิ้งเชลบอท 🤖
+【さัএπัஞ✵ບิथℓℓҨतΩ】:
 
-🤖 Bot Python2 :
-🔰 Self Bot Only ⏩ 80K/Bulan
+🤖 Bot LINE Python3 :
+💀 เชลบอท ครึ่งคนครึ่งบอท
+💀 เชลบอท ครึ่งคนครึ่งบอท+3คิก+1ผี
+💀 เชลบอท ครึ่งคนครึ่งบอท+9คิก+1ผี
 
-🤖 Bot Python3 :
-🔰 Self Bot Only ⏩ 100K/Bulan
-🔰 Self Bot + 4 Assist ⏩ 200K/Bulan
-🔰 Self Bot + 10 Assist + 2 Ghost + 1 AntiJS ⏩ 450K/Bulan
+🤖 เดือนแรก 100 บาท เดือนต่อไป 50 บาท
+🤖 ดูแล 24 ชม. ไม่ทิ้งลูกค้า
+🤖 หลุดต่อใหม่
+🤖 เชลอินโด
 
-✍️ Bisa Requests Mau Berapa Assist Buat Py3.
-Chat Ke : http://line.me/ti/p/~bots_line
-
+🇮🇩 ความสามารถ 🇮🇩
+* ดูคนแอบอ่านได้
+* เปิดคนเข้าออกได้
+* แทคได้
+* ตั้งแทคได้
+* ตั้งคนเข้าออกได้
+* ดู ตัส ชื่อ รูป ไอดี ได้
+* ดูคำสั่งได้ ฯลฯ
 📃
-* Always on 24 Jam
-* Fitur Banyak
-* Speed Python2 0.06S
-* Speed Python3 0.02S
-# Buat Assist, Pake Akun Dari Kami Harga Beda Lagi.
+📃
+* ดูแล 24 ชม.
+* LINE : bots_line
+* ความเร็ว 0.02
+* เปิดรับออเดอร์ เชื่อมบอทฟรีตลอด
+
+👉 สนใจจิ้มลิ้ง 👈
+line.me/ti/p/~bots_line
+
 """
     return helpMessage3
 def translate():
@@ -1218,7 +1230,7 @@ def bot(op):
                                 cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
  
                         elif cmd == "ผส" or text.lower() == 'creator':
-                            if msg._from in admin:
+                            #if msg._from in admin:
                                 cl.sendMessage(msg.to,"Creator Bot")
                                 ma = ""
                                 for i in admin:
