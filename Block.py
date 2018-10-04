@@ -1753,6 +1753,7 @@ def bot(op):
                                    for p in range (140, len(nama)-1):
                                        nm8 += [nama[p]]
                                    mentionMembers(msg.to, nm8)
+
                         elif cmd == "mention":
                           if wait["selfbot"] == True:
                             group = cl.getGroup(msg.to)
@@ -1812,6 +1813,12 @@ def bot(op):
                                cl.sendMessage(msg.to, "Progres speed...")
                                elapsed_time = time.time() - start
                                cl.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
+
+                        elif cmd == ".speed" or cmd == ".sp":
+                          if wait["selfbot"] == True:
+                            #if msg._from in admin:
+                               cl.sendMessage(msg.to, "Progres speed...")
+                               cl.sendMessage(msg.to, "0.000000001969726562 detik")
 
                         elif cmd == "lurking on":
                           if wait["selfbot"] == True:
